@@ -1,17 +1,44 @@
+/* SUMMARY
+Variables
+Base
+Globals
+Media queries
+*/
+/* Variables
+  ============================= */
+:root {
+  --blue: #387ca6;
+  --lightblue: #04a5f0;
+  --wood: #402f11;
+  --lightwood: #7f5d22;
+  --font-family-base: sans-serif;
+  --font-size-base: 16px;
+}
+/* Base
+  ============================= */
+html {
+  box-sizing: border-box;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  scroll-behavior: smooth;
+}
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
-html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 a {
+  color: var(--lightblue);
+}
+a:link {
   text-decoration: none;
 }
 a:visited {
@@ -19,9 +46,90 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
+  color: var(--blue);
 }
 a:active {
+  text-decoration: underline;
 }
+header {
+}
+nav {
+}
+main {
+  width: 100%;
+}
+aside {
+}
+footer {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 4px;
+}
+/* Globals
+  ============================= */
 .d-none {
   display: none;
 }
+.v-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+/* Media queries
+  ============================= */
+@media screen and (min-width: 480px) {
+  header {
+  }
+  nav {
+  }
+  main {
+    max-width: 420px;
+  }
+  aside {
+  }
+  footer {
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+  }
+  nav {
+  }
+  main {
+    max-width: 720px;
+  }
+  aside {
+  }
+  footer {
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+  }
+  nav {
+  }
+  main {
+    max-width: 960px;
+  }
+  aside {
+  }
+  footer {
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+  }
+  nav {
+  }
+  main {
+    max-width: 1140px;
+  }
+  aside {
+  }
+  footer {
+  }
+}
+/*
+  ============================= */

@@ -1,5 +1,9 @@
 export default function Header() {
-  const $header = document.createElement("header");
-  $header.textContent = "header";
+  const d = document,
+    $header = d.createElement("header"),
+    $home = d.createElement("a");
+  $home.setAttribute("href", "#/");
+  $home.textContent = "javierandresgp.com";
+  $header.appendChild($home);
   return $header;
 }
