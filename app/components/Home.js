@@ -12,18 +12,18 @@ export default function Home() {
     $tools = d.createElement("h4"),
     $tool = d.createElement("p");
   $home.classList.add("home");
-  $title.textContent = "Software Engineer";
+  $title.textContent = "software Engineer";
   $img.setAttribute("src", "./app/images/photo.jpg");
   $img.setAttribute("alt", "software engineer");
   $language.classList.add("t-center");
   $tool.classList.add("t-center");
   $figcaption.textContent = "Javier Andrés Garzón Patarroyo";
-  $subtitle.textContent = "Front-End Developer";
+  $subtitle.textContent = "front-end developer";
   $intro.textContent =
     "Javier Andrés is a software engineer oriented front-end developer, his focus is JavaScript.";
-  $languages.textContent = "Languages";
+  $languages.textContent = "languages";
   $language.textContent = "HTML, CSS, JavaScript";
-  $tools.textContent = "Tools";
+  $tools.textContent = "tools";
   $tool.textContent = "Git, GitHub, REST API";
   $home.appendChild($title);
   $figure.appendChild($img);

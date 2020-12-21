@@ -9,8 +9,6 @@ Media queries
 :root {
   --blue: #387ca6;
   --lightblue: #04a5f0;
-  --wood: #402f11;
-  --lightwood: #7f5d22;
   --font-family-base: sans-serif;
   --font-size-title: 20px;
   --font-size-base: 16px;
@@ -19,10 +17,6 @@ Media queries
   ============================= */
 html {
   box-sizing: border-box;
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-  line-height: 1.16;
-  color: var(--wood);
   scroll-behavior: smooth;
 }
 *,
@@ -33,6 +27,9 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: 1.16;
 }
 img {
   max-width: 100%;
@@ -60,6 +57,7 @@ h3,
 h4 {
   font-size: var(--font-size-title);
   text-align: center;
+  text-transform: capitalize;
 }
 header {
   padding: 8px;
@@ -96,6 +94,14 @@ footer small {
 .v-hidden {
   visibility: hidden;
   opacity: 0;
+}
+.light-mode {
+  background-color: #ffffff;
+  color: var(--wood);
+}
+.dark-mode {
+  background-color: #121212;
+  color: #bb86fc;
 }
 .t-center {
   text-align: center;

@@ -15,11 +15,11 @@ export default function About() {
   $p2.textContent =
     "In 1994 he obtained his first formal job in the company 'Team Computer', there he learned to assemble computers and install software.";
   $p3.textContent =
-    "In 2002 he decided to work independently marketing software and hardware and giving technical support to his clients, he does so until 2019.";
+    "In 2002 he decided to work independently marketing software and hardware and giving technical support to his clients, he did so until 2019.";
   $p4.textContent =
-    "In September 2019, she decides to quit her job to focus on achieving two of her big dreams, learning to code and learning English.";
+    "In September 2019, he decided to quit his job to focus on achieving two of his big dreams, learning to code and learning English.";
   $p5.textContent =
-    "He currently dedicates all his time to training him as a software engineer to obtain his first formal job like programmer.";
+    "He currently dedicates all his time to training himself as a software engineer to obtain his first formal job like programmer.";
   $a.setAttribute("href", "#/personal");
   $a.textContent = "His personal life ... ";
   $about.appendChild($title);

@@ -7,8 +7,8 @@ export default function Header() {
   $home.textContent = "javierandresgp.com";
   $toggle.classList.add("theme");
   $toggle.innerHTML = `
-<input type="checkbox" name="theme" class="theme-cb" id="theme-0" checked>
-<label class="theme-label" for="theme-0">
+<input type="checkbox" name="theme" class="theme-cb" id="btnTheme" checked>
+<label class="theme-label" for="btnTheme">
   <div class="theme-inner"></div>
   <div class="theme-switch"></div>
 </label>
