@@ -9,7 +9,6 @@ import Footer from "./components/Footer.js";
 import Router from "./components/Router.js";
 export function App() {
   const $body = document.querySelector("body");
-  $body.classList.add("light-mode");
   $body.innerHTML = null;
   $body.appendChild(Header());
   $body.appendChild(Nav());

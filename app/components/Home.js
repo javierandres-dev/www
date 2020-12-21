@@ -20,7 +20,7 @@ export default function Home() {
   $figcaption.textContent = "Javier Andrés Garzón Patarroyo";
   $subtitle.textContent = "front-end developer";
   $intro.textContent =
-    "Javier Andrés is a software engineer oriented front-end developer, his focus is JavaScript.";
+    "Hello, I'm Javier Andrés, I'm a software engineer oriented front-end developer, my focus is JavaScript.";
   $languages.textContent = "languages";
   $language.textContent = "HTML, CSS, JavaScript";
   $tools.textContent = "tools";

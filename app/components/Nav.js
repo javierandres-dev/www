@@ -4,6 +4,8 @@ export default function Nav() {
     $portfolio = d.createElement("a"),
     $about = d.createElement("a"),
     $contact = d.createElement("a");
+  $nav.classList.add("light-mode");
+  $nav.setAttribute("data-theme", "");
   $portfolio.setAttribute("href", "#/portfolio");
   $about.setAttribute("href", "#/about");
   $contact.setAttribute("href", "#/contact");

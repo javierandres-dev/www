@@ -9,6 +9,8 @@ Media queries
 :root {
   --blue: #387ca6;
   --lightblue: #04a5f0;
+  --black: #121212;
+  --white: #ffffff;
   --font-family-base: sans-serif;
   --font-size-title: 20px;
   --font-size-base: 16px;
@@ -36,7 +38,7 @@ img {
   height: auto;
 }
 a {
-  color: var(--blue);
+  color: var(--lightblue);
 }
 a:link {
   text-decoration: none;
@@ -46,10 +48,10 @@ a:visited {
 }
 a:hover {
   text-decoration: underline;
-  color: var(--lightblue);
+  color: var(--blue);
 }
 a:active {
-  color: var(--lightblue);
+  color: var(--blue);
 }
 h1,
 h2,
@@ -64,7 +66,6 @@ header {
 }
 header a {
   padding: 8px 16px;
-  color: var(--lightblue);
 }
 nav {
 }
@@ -96,12 +97,12 @@ footer small {
   opacity: 0;
 }
 .light-mode {
-  background-color: #ffffff;
-  color: var(--wood);
+  background-color: var(--white);
+  color: var(--black);
 }
 .dark-mode {
-  background-color: #121212;
-  color: #bb86fc;
+  background-color: var(--black);
+  color: var(--white);
 }
 .t-center {
   text-align: center;
@@ -109,6 +110,10 @@ footer small {
 .home figure {
   width: 160px;
   margin: auto;
+}
+.home figure img {
+  border: thin solid var(--white);
+  border-radius: 50%;
 }
 .home figure figcaption {
   font-size: 10px;
@@ -130,8 +135,8 @@ footer small {
   display: flex;
   align-items: center;
   border-radius: 16px 16px;
-  border: thin solid var(--wood);
-  background-color: white;
+  border: thin solid var(--lightblue);
+  background-color: var(--white);
   position: relative;
 }
 .theme-label:hover {
@@ -147,27 +152,27 @@ footer small {
 }
 .theme-inner::before {
   content: "Light";
-  color: var(--wood);
+  color: var(--blue);
 }
 .theme-switch {
   width: 30px;
   height: 30px;
   background-color: var(--blue);
-  border: thin solid var(--wood);
+  border: thin solid var(--lightblue);
   border-radius: 50%;
   right: -8px;
   position: absolute;
   transition: 0.8s;
 }
 .theme .theme-cb:not(:checked) + .theme-label {
-  background-color: var(--wood);
+  background-color: var(--blue);
 }
 .theme .theme-cb:not(:checked) + .theme-label .theme-inner {
   transform: translateX(24px);
 }
 .theme .theme-cb:not(:checked) + .theme-label .theme-inner::before {
   content: "Dark";
-  color: white;
+  color: var(--white);
 }
 .theme .theme-cb:not(:checked) + .theme-label .theme-switch {
   transform: translateX(-56px);

@@ -11,17 +11,17 @@ export default function About() {
     $a = d.createElement("a");
   $title.textContent = "";
   $subtitle.textContent = "";
-  $p1.textContent = "Javier Andrés is a autodidact programmer.";
+  $p1.textContent = "I'm an autodidact programmer.";
   $p2.textContent =
-    "In 1994 he obtained his first formal job in the company 'Team Computer', there he learned to assemble computers and install software.";
+    "In 1994 I obtained my first formal job in the company 'Team Computer', there I learned to assemble computers and install software.";
   $p3.textContent =
-    "In 2002 he decided to work independently marketing software and hardware and giving technical support to his clients, he did so until 2019.";
+    "In 2002 I decided to work independently marketing software and hardware and giving technical support to my clients, I did so until 2019.";
   $p4.textContent =
-    "In September 2019, he decided to quit his job to focus on achieving two of his big dreams, learning to code and learning English.";
+    "In September 2019, I decided to quit my job to focus on achieving two of my big dreams, learning to Code and learning English.";
   $p5.textContent =
-    "He currently dedicates all his time to training himself as a software engineer to obtain his first formal job like programmer.";
+    "In 2019 I joined to the school of computer science and software development 'Holberton School' to the foundation program and I currently dedicate all my time to  study the specialization in Full-Stack Web Development and to train myself as a software engineer to obtain my first formal job as programmer.";
   $a.setAttribute("href", "#/personal");
-  $a.textContent = "His personal life ... ";
+  $a.textContent = "My personal life ... ";
   $about.appendChild($title);
   $about.appendChild($subtitle);
   $about.appendChild($p1);
