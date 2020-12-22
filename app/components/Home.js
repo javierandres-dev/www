@@ -17,7 +17,7 @@ export default function Home() {
   $img.setAttribute("alt", "software engineer");
   $language.classList.add("t-center");
   $tool.classList.add("t-center");
-  $figcaption.textContent = "Javier Andrés Garzón Patarroyo";
+  $figcaption.textContent = "Javier Andrés";
   $subtitle.textContent = "front-end developer";
   $intro.textContent =
     "Hello, I'm Javier Andrés, I'm a software engineer oriented front-end developer, my focus is JavaScript.";

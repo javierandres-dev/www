@@ -4,9 +4,9 @@ export default function Portfolio() {
     $title = d.createElement("h1"),
     $subtitle = d.createElement("h2"),
     $text = d.createElement("p");
-  $title.textContent = "";
-  $subtitle.textContent = "";
-  $text.textContent = "Portfolio.";
+  $title.textContent = "my portfolio";
+  $subtitle.textContent = ". . .";
+  $text.textContent = "I am working on it . . .";
   $portfolio.appendChild($title);
   $portfolio.appendChild($subtitle);
   $portfolio.appendChild($text);

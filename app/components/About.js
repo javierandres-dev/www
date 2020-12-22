@@ -8,9 +8,11 @@ export default function About() {
     $p3 = d.createElement("p"),
     $p4 = d.createElement("p"),
     $p5 = d.createElement("p"),
+    $p6 = d.createElement("p"),
+    $p7 = d.createElement("p"),
     $a = d.createElement("a");
-  $title.textContent = "";
-  $subtitle.textContent = "";
+  $title.textContent = "About Javier Andrés";
+  $subtitle.textContent = ". . .";
   $p1.textContent = "I'm an autodidact programmer.";
   $p2.textContent =
     "In 1994 I obtained my first formal job in the company 'Team Computer', there I learned to assemble computers and install software.";
@@ -20,6 +22,10 @@ export default function About() {
     "In September 2019, I decided to quit my job to focus on achieving two of my big dreams, learning to Code and learning English.";
   $p5.textContent =
     "In 2019 I joined to the school of computer science and software development 'Holberton School' to the foundation program and I currently dedicate all my time to  study the specialization in Full-Stack Web Development and to train myself as a software engineer to obtain my first formal job as programmer.";
+  $p6.textContent =
+    "During this time I have developed some projects using different programming languages like 'C', 'Python', 'SQL' and by my own with 'Java'.";
+  $p7.textContent =
+    "What I'm looking for is to be a Back-End programmer. Day by day I work hard to get it.";
   $a.setAttribute("href", "#/personal");
   $a.textContent = "My personal life ... ";
   $about.appendChild($title);
@@ -29,6 +35,8 @@ export default function About() {
   $about.appendChild($p3);
   $about.appendChild($p4);
   $about.appendChild($p5);
+  $about.appendChild($p6);
+  $about.appendChild($p7);
   $about.appendChild($a);
   return $about;
 }

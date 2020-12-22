@@ -10,9 +10,12 @@
 /* 0. Variables
   ============================= */
 :root {
-  --blue: #387ca6;
+  --blue: #378afc;
   --lightblue: #04a5f0;
-  --black: #121212;
+  --darkblue: #3572a5;
+  --gray: #30363d;
+  --lightgray: #c9d1d9;
+  --black: #0d1117;
   --white: #ffffff;
   --font-family-base: sans-serif;
   --font-size-xxl: 22px;
@@ -59,7 +62,7 @@ a:hover {
   color: var(--blue);
 }
 a:active {
-  color: var(--blue);
+  color: var(--darkblue);
 }
 h1,
 h2,
@@ -81,6 +84,13 @@ main {
   min-height: 1vh;
   margin: auto;
   padding: 1rem;
+}
+aside {
+  display: flex;
+  justify-content: space-around;
+}
+address {
+  text-align: center;
 }
 footer {
   font-weight: lighter;
@@ -104,11 +114,11 @@ footer small {
 }
 .light-mode {
   background-color: var(--white);
-  color: var(--black);
+  color: var(--gray);
 }
 .dark-mode {
   background-color: var(--black);
-  color: var(--white);
+  color: var(--lightgray);
 }
 /* 3. Theme
   ============================= */
@@ -116,20 +126,20 @@ footer small {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  width: 6rem;
+  width: 5rem;
   display: flex;
 }
 .theme-cb {
   visibility: hidden;
 }
 .theme-label {
-  width: 5rem;
+  width: 4rem;
   height: 1.5rem;
   display: flex;
   align-items: center;
   border-radius: 1rem 1rem;
   border: thin solid var(--lightblue);
-  background-color: var(--white);
+  background-color: var(--lightgray);
   position: relative;
 }
 .theme-label:hover {
@@ -144,8 +154,7 @@ footer small {
   transition: 0.8s;
 }
 .theme-inner::before {
-  content: "Light";
-  color: var(--blue);
+  content: "☀️";
 }
 .theme-switch {
   width: 2rem;
@@ -158,17 +167,16 @@ footer small {
   transition: 0.8s;
 }
 .theme .theme-cb:not(:checked) + .theme-label {
-  background-color: var(--blue);
+  background-color: var(--gray);
 }
 .theme .theme-cb:not(:checked) + .theme-label .theme-inner {
   transform: translateX(1.5rem);
 }
 .theme .theme-cb:not(:checked) + .theme-label .theme-inner::before {
-  content: "Dark";
-  color: var(--white);
+  content: "🌙";
 }
 .theme .theme-cb:not(:checked) + .theme-label .theme-switch {
-  transform: translateX(-3.5rem);
+  transform: translateX(-2.5rem);
 }
 /* 4. Menu
   ============================= */
@@ -185,7 +193,10 @@ footer small {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--lightblue);
+  background-color: var(--blue);
+}
+.btn-menu:hover {
+  background-color: var(--darkblue);
 }
 .menu-open {
   display: none;
@@ -232,7 +243,7 @@ footer small {
   left: 0;
   width: 100%;
   overflow-y: auto;
-  background-color: var(--black);
+  background-color: var(--gray);
   opacity: 0;
   visibility: hidden;
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -284,58 +295,95 @@ footer small {
 /* Media queries
   ============================= */
 @media screen and (min-width: 480px) {
-  header {
-  }
-  nav {
-  }
   main {
     max-width: 420px;
   }
-  aside {
-  }
   footer {
+    padding: 1rem;
+  }
+  footer p {
+    font-size: var(--font-size-s);
+  }
+  footer small {
+    font-size: var(--font-size-xs);
+  }
+  .home figure figcaption {
+    font-size: var(--font-size-xs);
   }
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: var(--font-size-xl);
   }
-  nav {
+  header {
+    padding: 1.5rem;
   }
   main {
     max-width: 720px;
   }
-  aside {
-  }
   footer {
+    padding: 2rem;
+  }
+  footer p {
+    font-size: var(--font-size-base);
+  }
+  footer small {
+    font-size: var(--font-size-s);
+  }
+  .home figure figcaption {
+    font-size: var(--font-size-s);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  header {
-  }
-  nav {
-  }
   main {
     max-width: 960px;
   }
-  aside {
+  .btn-menu {
+    display: none;
   }
-  footer {
+  .navbar {
+    display: block;
+    position: relative;
+    z-index: 0;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    overflow-y: auto;
+    background-color: var(--gray);
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+  }
+  .menu-list {
+    list-style: none;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-list a {
+    display: block;
+    transition: all 0.5s ease;
+    padding: 0.5rem 1rem;
+  }
+  .menu-list a:hover {
+    background-color: inherit;
+    border-radius: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   header {
-  }
-  nav {
+    padding: 2rem;
   }
   main {
     max-width: 1140px;
-  }
-  aside {
-  }
-  footer {
   }
 }
 /*
