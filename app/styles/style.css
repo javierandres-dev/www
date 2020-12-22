@@ -1,10 +1,13 @@
 /* SUMMARY
-Variables
-Base
-Globals
-Media queries
+  0. Variables
+  1. Base
+  2. Globals
+  3. Theme
+  4. Menu
+  5. Home
+  Media queries
 */
-/* Variables
+/* 0. Variables
   ============================= */
 :root {
   --blue: #387ca6;
@@ -12,10 +15,15 @@ Media queries
   --black: #121212;
   --white: #ffffff;
   --font-family-base: sans-serif;
-  --font-size-title: 20px;
+  --font-size-xxl: 22px;
+  --font-size-xl: 20px;
+  --font-size-l: 18px;
   --font-size-base: 16px;
+  --font-size-s: 14px;
+  --font-size-xs: 12px;
+  --font-size-xxs: 10px;
 }
-/* Base
+/* 1. Base
   ============================= */
 html {
   box-sizing: border-box;
@@ -57,44 +65,42 @@ h1,
 h2,
 h3,
 h4 {
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-l);
   text-align: center;
   text-transform: capitalize;
 }
 header {
-  padding: 8px;
+  top: 0;
+  padding: 1rem;
 }
 header a {
-  padding: 8px 16px;
-}
-nav {
+  padding: 1rem;
 }
 main {
-  width: 100%;
+  max-width: 100%;
+  min-height: 1vh;
   margin: auto;
-  padding: 16px;
-}
-aside {
+  padding: 1rem;
 }
 footer {
+  font-weight: lighter;
   text-align: right;
-  padding: 4px;
+  padding: 0.2rem;
 }
 footer p {
-  font-size: 14px;
+  font-size: var(--font-size-xs);
   margin-bottom: auto;
 }
 footer small {
-  font-size: 10px;
+  font-size: var(--font-size-xxs);
 }
-/* Globals
+/* 2. Globals
   ============================= */
 .d-none {
   display: none;
 }
-.v-hidden {
-  visibility: hidden;
-  opacity: 0;
+.t-center {
+  text-align: center;
 }
 .light-mode {
   background-color: var(--white);
@@ -104,37 +110,24 @@ footer small {
   background-color: var(--black);
   color: var(--white);
 }
-.t-center {
-  text-align: center;
-}
-.home figure {
-  width: 160px;
-  margin: auto;
-}
-.home figure img {
-  border: thin solid var(--white);
-  border-radius: 50%;
-}
-.home figure figcaption {
-  font-size: 10px;
-  text-align: center;
-}
+/* 3. Theme
+  ============================= */
 .theme {
   position: absolute;
-  right: 16px;
-  top: 8px;
-  width: 96px;
+  right: 1rem;
+  top: 1rem;
+  width: 6rem;
   display: flex;
 }
 .theme-cb {
   visibility: hidden;
 }
 .theme-label {
-  width: 80px;
-  height: 24px;
+  width: 5rem;
+  height: 1.5rem;
   display: flex;
   align-items: center;
-  border-radius: 16px 16px;
+  border-radius: 1rem 1rem;
   border: thin solid var(--lightblue);
   background-color: var(--white);
   position: relative;
@@ -143,9 +136,9 @@ footer small {
   cursor: pointer;
 }
 .theme-inner {
-  width: 16px;
-  height: 16px;
-  left: 8px;
+  width: 1rem;
+  height: 1rem;
+  left: 0.5rem;
   text-align: center;
   position: absolute;
   transition: 0.8s;
@@ -155,12 +148,12 @@ footer small {
   color: var(--blue);
 }
 .theme-switch {
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--blue);
   border: thin solid var(--lightblue);
   border-radius: 50%;
-  right: -8px;
+  right: -0.5rem;
   position: absolute;
   transition: 0.8s;
 }
@@ -168,14 +161,125 @@ footer small {
   background-color: var(--blue);
 }
 .theme .theme-cb:not(:checked) + .theme-label .theme-inner {
-  transform: translateX(24px);
+  transform: translateX(1.5rem);
 }
 .theme .theme-cb:not(:checked) + .theme-label .theme-inner::before {
   content: "Dark";
   color: var(--white);
 }
 .theme .theme-cb:not(:checked) + .theme-label .theme-switch {
-  transform: translateX(-56px);
+  transform: translateX(-3.5rem);
+}
+/* 4. Menu
+  ============================= */
+.btn-menu {
+  position: fixed;
+  z-index: 999;
+  bottom: 2vh;
+  right: 2vw;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightblue);
+}
+.menu-open {
+  display: none;
+}
+.menu-open-btn {
+  width: 2rem;
+  height: 2rem;
+}
+.menu-line {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: var(--white);
+  border-radius: 0.2rem;
+  position: absolute;
+  transition: all 0.1s ease-in-out;
+  margin: 1rem -1rem;
+}
+.menu-line-1 {
+  transform: translate3d(0, -0.7rem, 0);
+}
+.menu-line-2 {
+  width: 1.4rem;
+  transform: translate3d(0, 0, 0);
+}
+.menu-line-3 {
+  transform: translate3d(0, 0.7rem, 0);
+}
+.menu-open:checked + .menu-open-btn .menu-line-1 {
+  transform: rotate(45deg) translate3d(0, 0, 0);
+}
+.menu-open:checked + .menu-open-btn .menu-line-2 {
+  transform: scale(0) translate3d(0, 0, 0);
+}
+.menu-open:checked + .menu-open-btn .menu-line-3 {
+  transform: rotate(-45deg) translate3d(0, 0, 0);
+}
+.navbar {
+  display: block;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow-y: auto;
+  background-color: var(--black);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translate(-100%, 0);
+}
+.navbar.nv-active {
+  opacity: 0.96;
+  visibility: visible;
+  transform: translate(0, 0);
+}
+.menu-list {
+  list-style: none;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.menu-list li {
+  width: 100%;
+}
+.menu-list a {
+  display: block;
+  width: inherit;
+  transition: all 0.3s ease;
+  padding: 2rem 4rem;
+}
+.menu-list a:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 2rem 0 0 2rem;
+}
+/* 5. Home
+  ============================= */
+.home figure {
+  width: 10rem;
+  margin: auto;
+}
+.home figure img {
+  border: thin solid var(--white);
+  border-radius: 50%;
+}
+.home figure figcaption {
+  font-weight: lighter;
+  font-size: var(--font-size-xxs);
+  text-align: center;
 }
 /* Media queries
   ============================= */
