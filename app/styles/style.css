@@ -87,7 +87,18 @@ main {
 }
 aside {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+aside small {
+  display: block;
+  width: 100%;
+  padding-left: 1rem;
+  color: var(--lightgray);
+}
+aside a {
+  display: block;
+  padding: 1rem;
 }
 address {
   text-align: center;

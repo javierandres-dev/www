@@ -1,6 +1,7 @@
 export default function Aside() {
   const d = document,
     $aside = d.createElement("aside"),
+    $ads = d.createElement("small"),
     $gsuite = d.createElement("a"),
     $hostgator = d.createElement("a");
   $gsuite.setAttribute("target", "_blank");
@@ -15,8 +16,10 @@ export default function Aside() {
     "href",
     "https://www.hostgator.la/2425-14-1-1464.html"
   );
+  $ads.textContent = "Ads";
   $gsuite.textContent = "G Suite";
   $hostgator.textContent = "HostGator";
+  $aside.appendChild($ads);
   $aside.appendChild($gsuite);
   $aside.appendChild($hostgator);
   return $aside;
