@@ -27,7 +27,7 @@ export function changeTheme() {
     darkMode();
   }
 }
-export function handleTheme() {
+export function setTheme() {
   const ls = localStorage;
   d.addEventListener("DOMContentLoaded", (e) => {
     if (ls.getItem("theme") === null) ls.setItem("theme", "light");

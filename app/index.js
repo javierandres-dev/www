@@ -3,7 +3,7 @@
  * Here the invocation of the other script is generate
  */
 import { App } from "./App.js";
-import { handleTheme, changeTheme } from "./helpers/handleTheme.js";
+import { setTheme, changeTheme } from "./helpers/handleTheme.js";
 import handleMenu from "./helpers/handleMenu.js";
 // when all scripts and styles already loaded
 //window.onload = () => {};
@@ -23,4 +23,4 @@ const eventListeners = () => {
     }
   });
 };
-handleTheme();
+setTheme();
