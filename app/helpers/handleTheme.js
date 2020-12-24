@@ -1,6 +1,7 @@
-export function darkMode(check) {
-  const $btn = document.getElementById("btnTheme");
-  const $selectors = document.querySelectorAll("[data-theme]");
+const d = document;
+export function darkMode() {
+  const $btn = d.getElementById("btnTheme");
+  const $selectors = d.querySelectorAll("[data-theme]");
   $selectors.forEach(($selector) => {
     $selector.classList.remove("light-mode");
     $selector.classList.add("dark-mode");
@@ -8,9 +9,9 @@ export function darkMode(check) {
   });
   $btn.checked = false;
 }
-export function lightMode(check) {
-  const $btn = document.getElementById("btnTheme");
-  const $selectors = document.querySelectorAll("[data-theme]");
+export function lightMode() {
+  const $btn = d.getElementById("btnTheme");
+  const $selectors = d.querySelectorAll("[data-theme]");
   $selectors.forEach(($selector) => {
     $selector.classList.remove("dark-mode");
     $selector.classList.add("light-mode");
@@ -19,7 +20,7 @@ export function lightMode(check) {
   $btn.checked = true;
 }
 export function changeTheme() {
-  const $btn = document.getElementById("btnTheme");
+  const $btn = d.getElementById("btnTheme");
   if ($btn.checked) {
     lightMode();
   } else {
@@ -28,7 +29,7 @@ export function changeTheme() {
 }
 export function handleTheme() {
   const ls = localStorage;
-  document.addEventListener("DOMContentLoaded", (e) => {
+  d.addEventListener("DOMContentLoaded", (e) => {
     if (ls.getItem("theme") === null) ls.setItem("theme", "light");
     if (ls.getItem("theme") === "light") lightMode();
     if (ls.getItem("theme") === "dark") darkMode();

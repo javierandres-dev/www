@@ -141,7 +141,7 @@ footer small {
   display: flex;
 }
 .theme-cb {
-  visibility: visible;
+  visibility: hidden;
 }
 .theme-label {
   width: 4rem;
