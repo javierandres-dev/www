@@ -3,21 +3,24 @@
  * Here the invocation of the other script is generate
  */
 import { App } from "./App.js";
-import handleTheme from "./helpers/handleTheme.js";
+import { handleTheme, changeTheme } from "./helpers/handleTheme.js";
 import handleMenu from "./helpers/handleMenu.js";
-// when the document already loaded
-window.onload = () => App();
+// when all scripts and styles already loaded
+window.onload = () => {};
 window.addEventListener("hashchange", App);
+// when the document tree already loaded
 document.addEventListener("DOMContentLoaded", () => {
+  App();
   eventListeners();
 });
 const eventListeners = () => {
   document.addEventListener("click", (e) => {
     if (e.target.id === "btnTheme") {
-      handleTheme();
+      changeTheme();
     }
-    if (e.target.id === "menuOpen") {
+    if (e.target.id === "btnMenu") {
       handleMenu();
     }
   });
 };
+handleTheme();

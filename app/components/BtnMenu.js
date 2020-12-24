@@ -7,12 +7,12 @@ export default function BtnMenu() {
     $l2 = d.createElement("span"),
     $l3 = d.createElement("span");
   $btnMenu.classList.add("btn-menu");
-  $btn.setAttribute("id", "menuOpen");
+  $btn.setAttribute("id", "btnMenu");
   $btn.setAttribute("name", "menu-open");
   $btn.setAttribute("type", "checkbox");
   $btn.setAttribute("href", "#");
   $btn.classList.add("menu-open");
-  $lines.setAttribute("for", "menuOpen");
+  $lines.setAttribute("for", "btnMenu");
   $lines.classList.add("menu-open-btn");
   $l1.classList.add("menu-line", "menu-line-1");
   $l2.classList.add("menu-line", "menu-line-2");

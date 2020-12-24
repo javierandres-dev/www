@@ -3,11 +3,11 @@ export default function Header() {
     $header = d.createElement("header"),
     $home = d.createElement("a"),
     $toggle = d.createElement("div");
-  $home.setAttribute("href", "#/");
+  $home.setAttribute("href", "https://www.javierandresgp.com");
   $home.textContent = "javierandresgp.com";
   $toggle.classList.add("theme");
   $toggle.innerHTML = `
-<input type="checkbox" name="theme" class="theme-cb" id="btnTheme" checked>
+<input type="checkbox" name="theme" class="theme-cb" id="btnTheme">
 <label class="theme-label" for="btnTheme">
   <div class="theme-inner"></div>
   <div class="theme-switch"></div>
