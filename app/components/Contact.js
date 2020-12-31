@@ -4,7 +4,7 @@ export default function Contact() {
     $phone = d.createElement("p"),
     $email = d.createElement("p");
   $phone.textContent = "📱 +57 300 560 0756";
-  $email.textContent = "info 📧 javierandresgp.com";
+  $email.innerHTML = `📭 info &#64; javierandresgp.com`;
   $contact.appendChild($phone);
   $contact.appendChild($email);
   return $contact;

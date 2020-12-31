@@ -364,7 +364,7 @@ footer small {
   }
   .navbar {
     display: block;
-    position: relative;
+    position: static;
     z-index: 0;
     top: auto;
     right: auto;
@@ -382,6 +382,7 @@ footer small {
     width: inherit;
     display: flex;
     flex-direction: row;
+    position: static;
   }
   .menu-list a {
     display: block;
