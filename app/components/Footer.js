@@ -4,8 +4,7 @@ export default function Footer() {
     $text = d.createElement("p"),
     $copy = d.createElement("small");
   $text.textContent = "Found a bug or have an idea? contact me.";
-  $copy.textContent =
-    "Copyright © 2020 Javier Andrés Garzón Patarroyo. All rights reserved.";
+  $copy.textContent = "Copyright © 2020 Javier Andrés GP. All rights reserved.";
   $footer.appendChild($text);
   $footer.appendChild($copy);
   return $footer;

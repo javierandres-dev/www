@@ -15,6 +15,7 @@ export default function Home() {
   $title.textContent = "software Engineer";
   $img.setAttribute("src", "./app/images/photo.jpg");
   $img.setAttribute("alt", "software engineer");
+  $intro.classList.add("t-center");
   $language.classList.add("t-center");
   $tool.classList.add("t-center");
   $figcaption.textContent = "Javier Andrés";

@@ -86,6 +86,12 @@ main {
   margin: auto;
   padding: 1rem;
 }
+ul {
+  list-style: none;
+}
+ul li {
+  margin: 0.4rem auto;
+}
 aside {
   background-color: var(--white);
   text-align: center;

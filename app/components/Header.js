@@ -4,7 +4,7 @@ export default function Header() {
     $home = d.createElement("a"),
     $toggle = d.createElement("div");
   $home.setAttribute("href", "https://www.javierandresgp.com");
-  $home.textContent = "javierandresgp.com";
+  $home.textContent = "Javier Andrés GP";
   $toggle.classList.add("theme");
   $toggle.innerHTML = `
 <input type="checkbox" name="theme" class="theme-cb" id="btnTheme">
