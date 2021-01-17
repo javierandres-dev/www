@@ -1,8 +1,8 @@
 export default function Portfolio() {
   const d = document,
     $portfolio = d.createElement("section"),
-    $title = d.createElement("h1"),
-    $subtitle = d.createElement("h2"),
+    $title = d.createElement("h2"),
+    $subtitle = d.createElement("h3"),
     $text = d.createElement("p"),
     $ul = d.createElement("ul"),
     $l1 = d.createElement("li"),

@@ -1,8 +1,8 @@
 export default function Personal() {
   const d = document,
     $personal = d.createElement("section"),
-    $title = d.createElement("h1"),
-    $subtitle = d.createElement("h2"),
+    $title = d.createElement("h2"),
+    $subtitle = d.createElement("h3"),
     $p1 = d.createElement("p"),
     $p2 = d.createElement("p");
   $title.textContent = "more ... ";

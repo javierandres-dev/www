@@ -9,6 +9,7 @@ export default function Aside() {
     $ah = d.createElement("a"),
     $ig = d.createElement("img"),
     $ih = d.createElement("img");
+  $aside.classList.add("ads");
   $title.textContent = "advertisements";
   $ag.setAttribute("target", "_blank");
   $ah.setAttribute("target", "_blank");

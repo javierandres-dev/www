@@ -12,7 +12,7 @@ export default function Nav() {
     $contact = d.createElement("a");
   $nav.classList.add("navbar");
   $mList.setAttribute("id", "menuList");
-  $mList.classList.add("menu-list");
+  $mList.classList.add("navbar__menu-list");
   $home.setAttribute("href", "#/");
   $portfolio.setAttribute("href", "#/portfolio");
   $about.setAttribute("href", "#/about");

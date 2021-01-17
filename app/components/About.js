@@ -1,8 +1,8 @@
 export default function About() {
   const d = document,
     $about = d.createElement("section"),
-    $title = d.createElement("h1"),
-    $subtitle = d.createElement("h2"),
+    $title = d.createElement("h2"),
+    $subtitle = d.createElement("h3"),
     $p1 = d.createElement("p"),
     $p2 = d.createElement("p"),
     $p3 = d.createElement("p"),

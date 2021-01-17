@@ -1,23 +1,20 @@
 export default function Home() {
   const d = document,
     $home = d.createElement("section"),
-    $title = d.createElement("h1"),
+    $title = d.createElement("h2"),
     $figure = d.createElement("figure"),
     $figcaption = d.createElement("figcaption"),
     $img = d.createElement("img"),
-    $subtitle = d.createElement("h2"),
+    $subtitle = d.createElement("h3"),
     $intro = d.createElement("p"),
-    $languages = d.createElement("h3"),
+    $languages = d.createElement("h4"),
     $language = d.createElement("p"),
-    $tools = d.createElement("h4"),
+    $tools = d.createElement("h5"),
     $tool = d.createElement("p");
   $home.classList.add("home");
   $title.textContent = "software Engineer";
   $img.setAttribute("src", "./app/images/photo.jpg");
   $img.setAttribute("alt", "software engineer");
-  $intro.classList.add("t-center");
-  $language.classList.add("t-center");
-  $tool.classList.add("t-center");
   $figcaption.textContent = "Javier Andrés";
   $subtitle.textContent = "front-end developer";
   $intro.textContent =
