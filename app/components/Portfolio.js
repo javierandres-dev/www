@@ -9,10 +9,12 @@ export default function Portfolio() {
     $l2 = d.createElement("li"),
     $l3 = d.createElement("li"),
     $l4 = d.createElement("li"),
+    $l5 = d.createElement("li"),
     $a1 = d.createElement("a"),
     $a2 = d.createElement("a"),
     $a3 = d.createElement("a"),
     $a4 = d.createElement("a"),
+    $a5 = d.createElement("a"),
     $github = d.createElement("a");
   $title.textContent = "my portfolio";
   $subtitle.textContent = "Projects";
@@ -31,7 +33,7 @@ export default function Portfolio() {
     "href",
     "https://javierandresgp.github.io/github_pages-pokemon_cards/"
   );
-  $a2.textContent = "Pokémon cards";
+  $a2.textContent = "Pokémon Cards";
   $l2.appendChild($a2);
   $ul.appendChild($l2);
   $a3.setAttribute("target", "_blank");
@@ -49,9 +51,18 @@ export default function Portfolio() {
     "href",
     "https://javierandresgp.github.io/github_pages-javascript_exercises/"
   );
-  $a4.textContent = "JavaScript exercises";
+  $a4.textContent = "JavaScript Exercises";
   $l4.appendChild($a4);
   $ul.appendChild($l4);
+  $a5.setAttribute("target", "_blank");
+  $a5.setAttribute("rel", "noopener noreferrer");
+  $a5.setAttribute(
+    "href",
+    "https://javierandresgp.github.io/github_pages-foreign_exchange/"
+  );
+  $a5.textContent = "Foreign Exchange";
+  $l5.appendChild($a5);
+  $ul.appendChild($l5);
   $text.textContent = "For more projects look my repositories in ";
   $github.setAttribute("target", "_blank");
   $github.setAttribute("rel", "noopener noreferrer");

@@ -113,6 +113,9 @@ footer {
   font-weight: lighter;
   text-align: right;
   padding: 0.2rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 footer p {
   font-size: var(--font-size-xs);
