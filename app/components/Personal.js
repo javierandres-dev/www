@@ -1,3 +1,4 @@
+"use strict";
 export default function Personal() {
   const d = document,
     $personal = d.createElement("section"),

@@ -1,3 +1,4 @@
+"use strict";
 export default function BtnMenu() {
   const d = document,
     $btnMenu = d.createElement("button"),

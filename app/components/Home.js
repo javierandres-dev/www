@@ -1,3 +1,4 @@
+"use strict";
 export default function Home() {
   const d = document,
     $home = d.createElement("section"),

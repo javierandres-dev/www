@@ -1,3 +1,4 @@
+"use strict";
 const d = document;
 export function darkMode() {
   const $btn = d.getElementById("btnTheme");

@@ -1,3 +1,4 @@
+"use strict";
 export default function Pnf() {
   const d = document,
     $error = d.createElement("div"),

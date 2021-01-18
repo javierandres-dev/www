@@ -1,3 +1,4 @@
+"use strict";
 export default function Nav() {
   const d = document,
     $nav = d.createElement("nav"),

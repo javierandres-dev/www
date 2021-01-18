@@ -1,3 +1,4 @@
+"use strict";
 export default function Footer() {
   const d = document,
     $footer = d.createElement("footer"),

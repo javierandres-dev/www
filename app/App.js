@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Main component
  * Here the call of the other components is centralized

@@ -1,3 +1,4 @@
+"use strict";
 export default function Header() {
   const d = document,
     $header = d.createElement("header"),

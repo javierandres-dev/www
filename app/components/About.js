@@ -1,3 +1,4 @@
+"use strict";
 export default function About() {
   const d = document,
     $about = d.createElement("section"),

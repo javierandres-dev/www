@@ -1,3 +1,4 @@
+"use strict";
 import Home from "./Home.js";
 import Portfolio from "./Portfolio.js";
 import About from "./About.js";

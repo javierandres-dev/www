@@ -8,9 +8,10 @@
   6. Menu button
   7. Navigation bar
   8. Home
-  9. Advertisements
-  10. Footer
-  11. Media queries
+  9. Contact
+  10. Advertisements
+  11. Footer
+  12. Media queries
 */
 /* 0. CUSTOM PROPERTIES
   ============================= */
@@ -83,15 +84,6 @@ a:hover {
 }
 a:active {
   color: var(--darkblue);
-}
-ul {
-  list-style: none;
-}
-ul li {
-  margin: 0.4rem auto;
-}
-address {
-  text-align: center;
 }
 /* 2. GLOBALS
   ============================= */
@@ -319,7 +311,13 @@ address {
   font-size: var(--font-size-xxs);
   text-align: center;
 }
-/* 9. ADVERTISEMENTS
+/* 9. CONTACT
+  ============================= */
+.contact {
+  width: min(100%, 24rem);
+  margin: auto;
+}
+/* 10. ADVERTISEMENTS
   ============================= */
 .ads {
   background-color: var(--white);
@@ -337,7 +335,7 @@ address {
   flex-direction: column;
   align-items: center;
 }
-/* 10. FOOTER
+/* 11. FOOTER
   ============================= */
 .footer {
   font-weight: var(--font-weight-light);
@@ -351,7 +349,7 @@ address {
 .footer small {
   font-size: var(--font-size-xxs);
 }
-/* 11. Media queries
+/* 12. MEDIA QUERIES
   ============================= */
 @media screen and (min-width: 480px) {
   .container {

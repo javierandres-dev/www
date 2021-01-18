@@ -1,3 +1,4 @@
+"use strict";
 export default function handleMenu() {
   const $btn = document.getElementById("btnMenu"),
     $nav = document.querySelector("nav");

@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Main script
  * Here the invocation of the other script is generate
