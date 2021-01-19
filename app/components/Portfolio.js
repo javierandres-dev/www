@@ -1,6 +1,7 @@
 "use strict";
-export default function Portfolio(language) {
-  const d = document,
+export default function Portfolio() {
+  const spanish = navigator.language.startsWith("es"),
+    d = document,
     $portfolio = d.createElement("section"),
     $title = d.createElement("h2"),
     $subtitle = d.createElement("h3"),
@@ -73,7 +74,7 @@ export default function Portfolio(language) {
   $a5.textContent = "JavaScript Exercises ";
   $s5.appendChild($a5);
   $p5.appendChild($s5);
-  if (language === "es") {
+  if (spanish) {
     $sp1.textContent =
       " Es una demostración de todos los datos disponibles en la mas popular API de pruebas.";
     $sp2.textContent =

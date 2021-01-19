@@ -11,8 +11,7 @@ import handleMenu from "./helpers/handleMenu.js";
 window.addEventListener("hashchange", App);
 // when the document tree already loaded
 document.addEventListener("DOMContentLoaded", () => {
-  const spanish = navigator.language.startsWith("es");
-  spanish ? App("es") : App();
+  App();
   eventListeners();
 });
 const eventListeners = () => {

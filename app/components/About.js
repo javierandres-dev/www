@@ -1,6 +1,7 @@
 "use strict";
-export default function About(language) {
-  const d = document,
+export default function About() {
+  const spanish = navigator.language.startsWith("es"),
+    d = document,
     $about = d.createElement("section"),
     $title = d.createElement("h2"),
     $subtitle = d.createElement("h3"),
@@ -14,7 +15,7 @@ export default function About(language) {
     $a = d.createElement("a");
   $a.setAttribute("href", "#/personal");
   $subtitle.textContent = ". . .";
-  if (language === "es") {
+  if (spanish) {
     $title.textContent = "Acerca de Javier Andrés";
     $p1.textContent = "Soy un programador de software autodidacta.";
     $p2.textContent =

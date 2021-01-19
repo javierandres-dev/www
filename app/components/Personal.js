@@ -1,12 +1,13 @@
 "use strict";
-export default function Personal(language) {
-  const d = document,
+export default function Personal() {
+  const spanish = navigator.language.startsWith("es"),
+    d = document,
     $personal = d.createElement("section"),
     $title = d.createElement("h2"),
     $subtitle = d.createElement("h3"),
     $p1 = d.createElement("p"),
     $p2 = d.createElement("p");
-  if (language === "es") {
+  if (spanish) {
     $title.textContent = "más ... ";
     $subtitle.textContent = "... acerca de Javier Andrés";
     $p1.textContent =

@@ -1,6 +1,7 @@
 "use strict";
-export default function Home(language) {
-  const d = document,
+export default function Home() {
+  const spanish = navigator.language.startsWith("es"),
+    d = document,
     $home = d.createElement("section"),
     $title = d.createElement("h2"),
     $figure = d.createElement("figure"),
@@ -16,7 +17,7 @@ export default function Home(language) {
   $img.setAttribute("src", "./app/images/photo.jpg");
   $img.setAttribute("alt", "software engineer");
   $figcaption.textContent = "Javier Andrés";
-  if (language === "es") {
+  if (spanish) {
     $title.textContent = "ingeniero de software";
     $subtitle.textContent = "desarrollador front-end";
     $intro.textContent =
