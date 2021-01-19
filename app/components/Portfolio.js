@@ -84,7 +84,7 @@ export default function Portfolio() {
       " Obtenga la actual Tasa Representativa del Mercado y su historico, publique sus propios precios de compra y venta de moneda.";
     $sp5.textContent =
       " Sitio web inspirado y basado en los ejercicios propuestos en w3resource.";
-    $p.textContent = "Para mas proyectos mire mi repositorio en ";
+    $p.textContent = "Para más proyectos mire mi repositorio en ";
   } else {
     $sp1.textContent =
       " It's a demo consuming all available data in the most popular testing API.";

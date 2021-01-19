@@ -11,7 +11,7 @@ export default function Personal() {
     $title.textContent = "más ... ";
     $subtitle.textContent = "... acerca de Javier Andrés";
     $p1.textContent =
-      "Nací en 1976 en la ciudad de Bogotá D.C., Colombia.  Soy hijo único, casado con una maravillosa mujer con la que tenemos tambien dos maravillosos hijos.";
+      "Nací en 1976 en la ciudad de Bogotá D.C., Colombia.  Soy hijo único, casado con una maravillosa mujer con la que tenemos tambien dos asombrosos hijos.";
     $p2.textContent =
       "Mi esposa es una mujer profesional, es docente, mi hijo mayor tambien es profesional, él es diseñador gráfico con enfasis en animación y mi hijo menor es estudiante de último año de secundaria.";
   } else {

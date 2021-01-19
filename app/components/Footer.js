@@ -7,11 +7,11 @@ export default function Footer() {
     $copy = d.createElement("small");
   $footer.classList.add("footer");
   if (spanish) {
-    $text.textContent = "Encontró un error o tiene una idea? contácteme.";
+    $text.textContent = "Encontró un error o tiene una idea? Contácteme.";
     $copy.textContent =
       "Copyright © 2020 Javier Andrés GP. Todos los derechos reservados.";
   } else {
-    $text.textContent = "Found a bug or have an idea? contact me.";
+    $text.textContent = "Found a bug or have an idea? Contact me.";
     $copy.textContent =
       "Copyright © 2020 Javier Andrés GP. All rights reserved.";
   }
