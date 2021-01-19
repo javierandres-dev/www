@@ -1,5 +1,5 @@
 "use strict";
-export default function Home() {
+export default function Home(language) {
   const d = document,
     $home = d.createElement("section"),
     $title = d.createElement("h2"),
@@ -13,16 +13,25 @@ export default function Home() {
     $tools = d.createElement("h5"),
     $tool = d.createElement("p");
   $home.classList.add("home");
-  $title.textContent = "software Engineer";
   $img.setAttribute("src", "./app/images/photo.jpg");
   $img.setAttribute("alt", "software engineer");
   $figcaption.textContent = "Javier Andrés";
-  $subtitle.textContent = "front-end developer";
-  $intro.textContent =
-    "Hello, I'm Javier Andrés, I'm a software engineer oriented front-end developer, my focus is JavaScript.";
-  $languages.textContent = "languages";
+  if (language === "es") {
+    $title.textContent = "ingeniero de software";
+    $subtitle.textContent = "desarrollador front-end";
+    $intro.textContent =
+      "Hola, Soy Javier Andrés, Soy un ingeniero de software orientado al desarrollo web del lado del cliente, mi especialidad es JavaScript.";
+    $languages.textContent = "lenguajes";
+    $tools.textContent = "herramientas";
+  } else {
+    $title.textContent = "software engineer";
+    $subtitle.textContent = "front-end developer";
+    $intro.textContent =
+      "Hello, I'm Javier Andrés, I'm a software engineer oriented front-end developer, my focus is JavaScript.";
+    $languages.textContent = "languages";
+    $tools.textContent = "tools";
+  }
   $language.textContent = "HTML, CSS, JavaScript";
-  $tools.textContent = "tools";
   $tool.textContent = "Git, GitHub, REST API";
   $home.appendChild($title);
   $figure.appendChild($img);

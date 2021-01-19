@@ -18,7 +18,6 @@ export function App(language = "en") {
   $body.appendChild(BtnMenu());
   $body.appendChild(Nav(language));
   $body.appendChild(Main());
-  $body.appendChild(Footer());
-  Router();
-  //console.log(language);
+  $body.appendChild(Footer(language));
+  Router(language);
 }

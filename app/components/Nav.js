@@ -18,7 +18,6 @@ export default function Nav(language) {
   $portfolio.setAttribute("href", "#/portfolio");
   $about.setAttribute("href", "#/about");
   $contact.setAttribute("href", "#/contact");
-  //console.log(language);
   if (language === "es") {
     $home.textContent = "Inicio";
     $portfolio.textContent = "Portafolio";

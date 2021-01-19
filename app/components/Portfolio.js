@@ -1,5 +1,5 @@
 "use strict";
-export default function Portfolio() {
+export default function Portfolio(language) {
   const d = document,
     $portfolio = d.createElement("section"),
     $title = d.createElement("h2"),
@@ -37,9 +37,6 @@ export default function Portfolio() {
   $a1.textContent = "JSONplaceholder ";
   $s1.appendChild($a1);
   $p1.appendChild($s1);
-  $sp1.textContent =
-    " It's a demo consuming all available data in the most popular testing API.";
-  $p1.appendChild($sp1);
   $a2.setAttribute("target", "_blank");
   $a2.setAttribute("rel", "noopener noreferrer");
   $a2.setAttribute(
@@ -49,8 +46,6 @@ export default function Portfolio() {
   $a2.textContent = "Pokémon Cards ";
   $s2.appendChild($a2);
   $p2.appendChild($s2);
-  $sp2.textContent = " Look at all the pokemon and their main characteristics.";
-  $p2.appendChild($sp2);
   $a3.setAttribute("target", "_blank");
   $a3.setAttribute("rel", "noopener noreferrer");
   $a3.setAttribute(
@@ -60,8 +55,6 @@ export default function Portfolio() {
   $a3.textContent = "Weather Search ";
   $s3.appendChild($a3);
   $p3.appendChild($s3);
-  $sp3.textContent = " Find out the current weather of any city.";
-  $p3.appendChild($sp3);
   $a4.setAttribute("target", "_blank");
   $a4.setAttribute("rel", "noopener noreferrer");
   $a4.setAttribute(
@@ -71,9 +64,6 @@ export default function Portfolio() {
   $a4.textContent = "Foreign Exchange ";
   $s4.appendChild($a4);
   $p4.appendChild($s4);
-  $sp4.textContent =
-    " Get the daily TCRMH and its historic data and post your own prices to buy and sell of currency.";
-  $p4.appendChild($sp4);
   $a5.setAttribute("target", "_blank");
   $a5.setAttribute("rel", "noopener noreferrer");
   $a5.setAttribute(
@@ -83,10 +73,34 @@ export default function Portfolio() {
   $a5.textContent = "JavaScript Exercises ";
   $s5.appendChild($a5);
   $p5.appendChild($s5);
-  $sp5.textContent =
-    " Website is inspired and based on the exercises proposed in w3resource.";
+  if (language === "es") {
+    $sp1.textContent =
+      " Es una demostración de todos los datos disponibles en la mas popular API de pruebas.";
+    $sp2.textContent =
+      " Mire todos los Pokémon y sus principales características.";
+    $sp3.textContent = " Encuentre el clima actual de cualquier ciudad.";
+    $sp4.textContent =
+      " Obtenga la actual Tasa Representativa del Mercado y su historico, publique sus propios precios de compra y venta de moneda.";
+    $sp5.textContent =
+      " Sitio web inspirado y basado en los ejercicios propuestos en w3resource.";
+    $p.textContent = "Para mas proyectos mire mi repositorio en ";
+  } else {
+    $sp1.textContent =
+      " It's a demo consuming all available data in the most popular testing API.";
+    $sp2.textContent =
+      " Look at all the pokemon and their main characteristics.";
+    $sp3.textContent = " Find out the current weather of any city.";
+    $sp4.textContent =
+      " Get the daily TCRMH and its historic data and post your own prices to buy and sell of currency.";
+    $sp5.textContent =
+      " Website is inspired and based on the exercises proposed in w3resource.";
+    $p.textContent = "For more projects look my repositories in ";
+  }
+  $p1.appendChild($sp1);
+  $p2.appendChild($sp2);
+  $p3.appendChild($sp3);
+  $p4.appendChild($sp4);
   $p5.appendChild($sp5);
-  $p.textContent = "For more projects look my repositories in ";
   $a.setAttribute("target", "_blank");
   $a.setAttribute("rel", "noopener noreferrer");
   $a.setAttribute("href", "https://github.com/javierandresgp/");

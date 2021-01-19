@@ -1,5 +1,5 @@
 "use strict";
-export default function About() {
+export default function About(language) {
   const d = document,
     $about = d.createElement("section"),
     $title = d.createElement("h2"),
@@ -12,23 +12,41 @@ export default function About() {
     $p6 = d.createElement("p"),
     $p7 = d.createElement("p"),
     $a = d.createElement("a");
-  $title.textContent = "About Javier Andrés";
-  $subtitle.textContent = ". . .";
-  $p1.textContent = "I'm an autodidact programmer.";
-  $p2.textContent =
-    "In 1994 I obtained my first formal job in the company 'Team Computer', there I learned to assemble computers and install software.";
-  $p3.textContent =
-    "In 2002 I decided to work independently marketing software and hardware and giving technical support to my clients, I did so until 2019.";
-  $p4.textContent =
-    "In September 2019, I decided to quit my job to focus on achieving two of my big dreams, learning to Code and learning English.";
-  $p5.textContent =
-    "In 2019 I joined to the school of computer science and software development 'Holberton School' to the foundation program and I currently dedicate all my time to  study the specialization in Full-Stack Web Development and to train myself as a software engineer to obtain my first formal job as programmer.";
-  $p6.textContent =
-    "During this time I have developed some projects using different programming languages like 'C', 'Python', 'SQL' and by my own with 'Java'.";
-  $p7.textContent =
-    "What I'm looking for is to be a Back-End programmer. Day by day I work hard to get it.";
   $a.setAttribute("href", "#/personal");
-  $a.textContent = "My personal life ... ";
+  $subtitle.textContent = ". . .";
+  if (language === "es") {
+    $title.textContent = "Acerca de Javier Andrés";
+    $p1.textContent = "Soy un programador de software autodidacta.";
+    $p2.textContent =
+      "En 1994 Obtuve mi primer trabajo formal en la empresa 'Team Computer', ahí aprendí a ensamblar computadores y a instalar sotware.";
+    $p3.textContent =
+      "En 2002 decidí trabajar de manera independiente comercializando sotware, hardware y brindando soporte técnico a mis clientes, lo hice hasta 2019.";
+    $p4.textContent =
+      "En septiembre de 2019, decidí dejar mi trabajo y enfocarme en conseguir dos de mis grandes sueños, aprender a hacer software y aprender ingles.";
+    $p5.textContent =
+      " En 2019 me uní a la escuela de ciencias de la computación y desarrollo de software 'Holberton School' e inicié el programa de fundamentos, actualmente dedico todo mi tiempo a realizar la especialización que estoy cursando en 'Desarrollo Web Full-Stack' y aprendiendo por cuenta propia todo lo necesario para obtener mi primer empleo formal como programador de software.";
+    $p6.textContent =
+      "Durante este tiempo he desarrollado algunos proyectos usando diferentes lenguajes como 'C', 'Python', 'SQL' y por mi cuenta con 'Java'.";
+    $p7.textContent =
+      "Mi propósito es llegar a ser programador Back-End. Día a día trabajo por conseguirlo.";
+    $a.textContent = "Mi vida personal ... ";
+  } else {
+    $title.textContent = "About Javier Andrés";
+    $p1.textContent = "I'm an autodidact software programmer.";
+    $p2.textContent =
+      "In 1994 I obtained my first formal job in the company 'Team Computer', there I learned to assemble computers and install software.";
+    $p3.textContent =
+      "In 2002 I decided to work independently marketing software and hardware and giving technical support to my clients, I did so until 2019.";
+    $p4.textContent =
+      "In September 2019, I decided to quit my job to focus on achieving two of my big dreams, learning to Code and learning English.";
+    $p5.textContent =
+      "In 2019 I joined to the school of computer science and software development 'Holberton School' to the foundation program and I currently dedicate all my time to  study the specialization in Full-Stack Web Development and to train myself as a software engineer to obtain my first formal job as programmer.";
+    $p6.textContent =
+      "During this time I have developed some projects using different programming languages like 'C', 'Python', 'SQL' and by my own with 'Java'.";
+    $p7.textContent =
+      "What I'm looking for is to be a Back-End programmer. Day by day I work hard to get it.";
+    $a.textContent = "My personal life ... ";
+  }
   $about.appendChild($title);
   $about.appendChild($subtitle);
   $about.appendChild($p1);
