@@ -6,27 +6,27 @@ import Contact from "./Contact.js";
 import Personal from "./Personal.js";
 import Pnf from "./Pnf.js";
 import Aside from "./Aside.js";
-export default function Router() {
+export default function Router(language) {
   const { hash } = location,
     $main = document.querySelector("main");
   if (hash === "" || hash === "#/") {
     $main.innerHTML = null;
-    $main.appendChild(Home());
+    $main.appendChild(Home(language));
   } else if (hash === "#/portfolio") {
     $main.innerHTML = null;
-    $main.appendChild(Portfolio());
+    $main.appendChild(Portfolio(language));
     $main.insertAdjacentElement("afterend", Aside());
   } else if (hash === "#/about") {
     $main.innerHTML = null;
-    $main.appendChild(About());
+    $main.appendChild(About(language));
   } else if (hash === "#/contact") {
     $main.innerHTML = null;
     $main.appendChild(Contact());
   } else if (hash === "#/personal") {
     $main.innerHTML = null;
-    $main.appendChild(Personal());
+    $main.appendChild(Personal(language));
   } else {
     $main.innerHTML = null;
-    $main.appendChild(Pnf());
+    $main.appendChild(Pnf(language));
   }
 }

@@ -26,4 +26,3 @@ const eventListeners = () => {
   });
 };
 setTheme();
-//console.log(navigator.language.startsWith("es-"), "from document....");
