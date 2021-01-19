@@ -9,14 +9,14 @@ import Nav from "./components/Nav.js";
 import Main from "./components/Main.js";
 import Footer from "./components/Footer.js";
 import Router from "./components/Router.js";
-export function App() {
+export function App(lang = "en") {
   const $body = document.querySelector("body");
   $body.classList.add("light-mode");
   $body.setAttribute("data-theme", "");
   $body.innerHTML = null;
   $body.appendChild(Header());
   $body.appendChild(BtnMenu());
-  $body.appendChild(Nav());
+  $body.appendChild(Nav(lang));
   $body.appendChild(Main());
   $body.appendChild(Footer());
   Router();

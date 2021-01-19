@@ -1,7 +1,6 @@
 "use strict";
-export default function Nav() {
-  const spanish = navigator.language.startsWith("es"),
-    d = document,
+export default function Nav(lang) {
+  const d = document,
     $nav = d.createElement("nav"),
     $mList = d.createElement("ul"),
     $mItem0 = d.createElement("li"),
@@ -19,7 +18,7 @@ export default function Nav() {
   $portfolio.setAttribute("href", "#/portfolio");
   $about.setAttribute("href", "#/about");
   $contact.setAttribute("href", "#/contact");
-  if (spanish) {
+  if (lang === "es") {
     $home.textContent = "Inicio";
     $portfolio.textContent = "Portafolio";
     $about.textContent = "Acerca de";
