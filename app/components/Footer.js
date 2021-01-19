@@ -6,7 +6,7 @@ export default function Footer(language) {
     $copy = d.createElement("small");
   $footer.classList.add("footer");
   if (language === "es") {
-    $text.textContent = "Encontró un error o tiene una idea? contacteme.";
+    $text.textContent = "Encontró un error o tiene una idea? contácteme.";
     $copy.textContent =
       "Copyright © 2020 Javier Andrés GP. Todos los derechos reservados.";
   } else {
