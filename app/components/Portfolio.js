@@ -28,8 +28,6 @@ export default function Portfolio() {
     $p5 = d.createElement("p"),
     $a = d.createElement("a"),
     $p = d.createElement("p");
-  $title.textContent = "my portfolio";
-  $subtitle.textContent = "Projects";
   $a1.setAttribute("target", "_blank");
   $a1.setAttribute("rel", "noopener noreferrer");
   $a1.setAttribute(
@@ -76,6 +74,8 @@ export default function Portfolio() {
   $s5.appendChild($a5);
   $p5.appendChild($s5);
   if (spanish) {
+    $title.textContent = "portafolio";
+    $subtitle.textContent = "proyectos";
     $sp1.textContent =
       " Es una demostración de todos los datos disponibles en la mas popular API de pruebas.";
     $sp2.textContent =
@@ -87,6 +87,8 @@ export default function Portfolio() {
       " Sitio web inspirado y basado en los ejercicios propuestos en w3resource.";
     $p.textContent = "Para más proyectos mire mi repositorio en ";
   } else {
+    $title.textContent = "portfolio";
+    $subtitle.textContent = "projects";
     $sp1.textContent =
       " It's a demo consuming all available data in the most popular testing API.";
     $sp2.textContent =
