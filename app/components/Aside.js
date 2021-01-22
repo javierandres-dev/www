@@ -1,4 +1,5 @@
 "use strict";
+// set up the view of the "advertisements" section
 export default function Aside() {
   const d = document,
     $aside = d.createElement("aside"),

@@ -1,5 +1,6 @@
 "use strict";
 const d = document;
+// set styles for dark mode and saved in local storage
 export function darkMode() {
   const $btn = d.getElementById("btnTheme");
   const $selectors = d.querySelectorAll("[data-theme]");
@@ -10,6 +11,7 @@ export function darkMode() {
   });
   $btn.checked = false;
 }
+// set styles for light mode and saved in local storage
 export function lightMode() {
   const $btn = d.getElementById("btnTheme");
   const $selectors = d.querySelectorAll("[data-theme]");
@@ -20,6 +22,7 @@ export function lightMode() {
   });
   $btn.checked = true;
 }
+// change mode according to user selection
 export function changeTheme() {
   const $btn = d.getElementById("btnTheme");
   if ($btn.checked) {
@@ -28,6 +31,7 @@ export function changeTheme() {
     darkMode();
   }
 }
+// save in local storage the user preference
 export function setTheme() {
   const ls = localStorage;
   d.addEventListener("DOMContentLoaded", (e) => {

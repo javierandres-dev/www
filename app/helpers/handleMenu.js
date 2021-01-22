@@ -1,4 +1,5 @@
 "use strict";
+// show and hide the menu items
 export default function handleMenu() {
   const $btn = document.getElementById("btnMenu"),
     $nav = document.querySelector("nav");

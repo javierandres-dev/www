@@ -1,4 +1,5 @@
 "use strict";
+// set up the "header" tag
 export default function Header() {
   const d = document,
     $header = d.createElement("header"),
@@ -21,4 +22,3 @@ export default function Header() {
   $header.appendChild($toggle);
   return $header;
 }
-/* name="theme" */

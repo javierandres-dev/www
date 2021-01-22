@@ -12,8 +12,8 @@
   10. Advertisements
   11. Footer
   12. Media queries
-*/
-/* 0. CUSTOM PROPERTIES
+
+  0. CUSTOM PROPERTIES
   ============================= */
 :root {
   --blue: #378afc;
@@ -105,6 +105,12 @@ a:active {
   ============================= */
 .d-none {
   display: none;
+}
+.error {
+  text-align: center;
+  border-bottom: thin solid var(--darkblue);
+  width: 16rem;
+  margin: auto;
 }
 /* 4. HEADER
   ============================= */

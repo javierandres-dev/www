@@ -1,4 +1,5 @@
 "use strict";
+// set up the view of the "personal" page
 export default function Personal() {
   const spanish = navigator.language.startsWith("es"),
     d = document,

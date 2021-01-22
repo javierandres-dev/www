@@ -4,8 +4,9 @@ import Portfolio from "./Portfolio.js";
 import About from "./About.js";
 import Contact from "./Contact.js";
 import Personal from "./Personal.js";
-import Pnf from "./Pnf.js";
+import Error404 from "./Error404.js";
 import Aside from "./Aside.js";
+// set different views according to user selection
 export default function Router() {
   const { hash } = location,
     $main = document.querySelector("main");
@@ -27,6 +28,6 @@ export default function Router() {
     $main.appendChild(Personal());
   } else {
     $main.innerHTML = null;
-    $main.appendChild(Pnf());
+    $main.appendChild(Error404());
   }
 }

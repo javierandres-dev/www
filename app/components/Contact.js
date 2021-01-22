@@ -1,4 +1,5 @@
 "use strict";
+// set up the view of the "contact" page
 export default function Contact() {
   const d = document,
     $contact = d.createElement("address"),

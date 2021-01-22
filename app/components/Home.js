@@ -1,4 +1,5 @@
 "use strict";
+// set up the view of the "home" page
 export default function Home() {
   const spanish = navigator.language.startsWith("es"),
     d = document,

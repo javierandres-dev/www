@@ -1,4 +1,5 @@
 "use strict";
+// set up the view of the navigation bar
 export default function Nav() {
   const spanish = navigator.language.startsWith("es"),
     d = document,
