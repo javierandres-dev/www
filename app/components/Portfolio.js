@@ -26,6 +26,10 @@ export default function Portfolio() {
     $s5 = d.createElement("strong"),
     $sp5 = d.createElement("span"),
     $p5 = d.createElement("p"),
+    $a6 = d.createElement("a"),
+    $s6 = d.createElement("strong"),
+    $sp6 = d.createElement("span"),
+    $p6 = d.createElement("p"),
     $a = d.createElement("a"),
     $p = d.createElement("p");
   $a1.setAttribute("target", "_blank");
@@ -73,6 +77,15 @@ export default function Portfolio() {
   $a5.textContent = "JavaScript Exercises ";
   $s5.appendChild($a5);
   $p5.appendChild($s5);
+  $a6.setAttribute("target", "_blank");
+  $a6.setAttribute("rel", "noopener noreferrer");
+  $a6.setAttribute(
+    "href",
+    "https://javierandresgp.github.io/github_pages-calcular_prestamo/"
+  );
+  $a6.textContent = "Calcular Préstamo ";
+  $s6.appendChild($a6);
+  $p6.appendChild($s6);
   if (spanish) {
     $title.textContent = "portafolio";
     $subtitle.textContent = "proyectos";
@@ -85,6 +98,8 @@ export default function Portfolio() {
       " Obtenga la actual Tasa Representativa del Mercado y su historico, publique sus propios precios de compra y venta de moneda.";
     $sp5.textContent =
       " Sitio web inspirado y basado en los ejercicios propuestos en w3resource.";
+    $sp6.textContent =
+      " Herramienta útil para calcular las cuotas de un préstamo con tasa fija mensual.";
     $p.textContent = "Para más proyectos mire mi repositorio en ";
   } else {
     $title.textContent = "portfolio";
@@ -98,6 +113,8 @@ export default function Portfolio() {
       " Get the daily TCRMH and its historic data and post your own prices to buy and sell of currency.";
     $sp5.textContent =
       " Website is inspired and based on the exercises proposed in w3resource.";
+    $sp6.textContent =
+      " Useful tool to calculate the installments of a loan with a monthly fixed rate.";
     $p.textContent = "For more projects look my repositories in ";
   }
   $p1.appendChild($sp1);
@@ -105,6 +122,7 @@ export default function Portfolio() {
   $p3.appendChild($sp3);
   $p4.appendChild($sp4);
   $p5.appendChild($sp5);
+  $p6.appendChild($sp6);
   $a.setAttribute("target", "_blank");
   $a.setAttribute("rel", "noopener noreferrer");
   $a.setAttribute("href", "https://github.com/javierandresgp/");
@@ -117,6 +135,7 @@ export default function Portfolio() {
   $portfolio.appendChild($p3);
   $portfolio.appendChild($p4);
   $portfolio.appendChild($p5);
+  $portfolio.appendChild($p6);
   $portfolio.appendChild($p);
   return $portfolio;
 }
