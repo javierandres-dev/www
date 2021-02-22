@@ -13,13 +13,14 @@ export default function About() {
     $p5 = d.createElement('p'),
     $p6 = d.createElement('p'),
     $p7 = d.createElement('p'),
+    $p8 = d.createElement('p'),
     $a1 = d.createElement('a'),
     $a2 = d.createElement('a');
-  //$a1.setAttribute('href', '#/cv');
   $a1.setAttribute(
     'href',
     'https://drive.google.com/file/d/1y9kxQgPUKHTrjrKkbQ9Y8iWytnzqqkji/view?usp=sharing'
   );
+  $a1.setAttribute('_blank', 'noopener noreferrer');
   $a2.setAttribute('href', '#/personal');
   $subtitle.textContent = '. . .';
   if (spanish) {
@@ -37,8 +38,9 @@ export default function About() {
       "Durante este tiempo he desarrollado algunos proyectos usando diferentes lenguajes como 'C', 'Python', 'SQL' y por mi cuenta con 'Java'.";
     $p7.textContent =
       'Mi propósito es llegar a ser programador Back-End. Día a día trabajo por conseguirlo.';
-    $a1.textContent = 'Curriculum ... ';
-    $a2.textContent = 'Mi vida personal ... ';
+    $a1.textContent = 'Curriculum';
+    $p8.appendChild($a1);
+    $a2.textContent = ' Mi vida personal ... ';
   } else {
     $title.textContent = 'About Javier Andrés';
     $p1.textContent = "I'm an autodidact software programmer.";
@@ -54,8 +56,9 @@ export default function About() {
       "During this time I have developed some projects using different programming languages like 'C', 'Python', 'SQL' and by my own with 'Java'.";
     $p7.textContent =
       "What I'm looking for is to be a Back-End programmer. Day by day I work hard to get it.";
-    $a1.textContent = 'Curriculum ... ';
-    $a2.textContent = 'My personal life ... ';
+    $a1.textContent = 'Curriculum';
+    $p8.appendChild($a1);
+    $a2.textContent = ' My personal life ... ';
   }
   $about.appendChild($title);
   $about.appendChild($subtitle);
@@ -66,7 +69,7 @@ export default function About() {
   $about.appendChild($p5);
   $about.appendChild($p6);
   $about.appendChild($p7);
-  $about.appendChild($a1);
+  $about.appendChild($p8);
   $about.appendChild($a2);
   return $about;
 }
