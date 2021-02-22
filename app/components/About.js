@@ -16,7 +16,10 @@ export default function About() {
     $a1 = d.createElement('a'),
     $a2 = d.createElement('a');
   //$a1.setAttribute('href', '#/cv');
-  $a1.setAttribute('href', '');
+  $a1.setAttribute(
+    'href',
+    'https://drive.google.com/file/d/1y9kxQgPUKHTrjrKkbQ9Y8iWytnzqqkji/view?usp=sharing'
+  );
   $a2.setAttribute('href', '#/personal');
   $subtitle.textContent = '. . .';
   if (spanish) {
