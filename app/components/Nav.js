@@ -1,35 +1,35 @@
-"use strict";
+'use strict';
 // set up the view of the navigation bar
 export default function Nav() {
-  const spanish = navigator.language.startsWith("es"),
+  const spanish = navigator.language.startsWith('es'),
     d = document,
-    $nav = d.createElement("nav"),
-    $mList = d.createElement("ul"),
-    $mItem0 = d.createElement("li"),
-    $mItem1 = d.createElement("li"),
-    $mItem2 = d.createElement("li"),
-    $mItem3 = d.createElement("li"),
-    $home = d.createElement("a"),
-    $portfolio = d.createElement("a"),
-    $about = d.createElement("a"),
-    $contact = d.createElement("a");
-  $nav.classList.add("navbar");
-  $mList.setAttribute("id", "menuList");
-  $mList.classList.add("navbar__menu-list");
-  $home.setAttribute("href", "#/");
-  $portfolio.setAttribute("href", "#/portfolio");
-  $about.setAttribute("href", "#/about");
-  $contact.setAttribute("href", "#/contact");
+    $nav = d.createElement('nav'),
+    $mList = d.createElement('ul'),
+    $mItem0 = d.createElement('li'),
+    $mItem1 = d.createElement('li'),
+    $mItem2 = d.createElement('li'),
+    $mItem3 = d.createElement('li'),
+    $home = d.createElement('a'),
+    $portfolio = d.createElement('a'),
+    $about = d.createElement('a'),
+    $contact = d.createElement('a');
+  $nav.classList.add('navbar');
+  $mList.setAttribute('id', 'menuList');
+  $mList.classList.add('navbar__menu-list');
+  $home.setAttribute('href', '#/');
+  $portfolio.setAttribute('href', '#/portfolio');
+  $about.setAttribute('href', '#/about');
+  $contact.setAttribute('href', '#/contact');
   if (spanish) {
-    $home.textContent = "Inicio";
-    $portfolio.textContent = "Portafolio";
-    $about.textContent = "Acerca de";
-    $contact.textContent = "Contacto";
+    $home.textContent = 'inicio';
+    $portfolio.textContent = 'portafolio';
+    $about.textContent = 'acerca de';
+    $contact.textContent = 'contacto';
   } else {
-    $home.textContent = "Home";
-    $portfolio.textContent = "Portfolio";
-    $about.textContent = "About";
-    $contact.textContent = "Contact";
+    $home.textContent = 'home';
+    $portfolio.textContent = 'portfolio';
+    $about.textContent = 'about';
+    $contact.textContent = 'contact';
   }
   $mItem0.appendChild($home);
   $mItem1.appendChild($portfolio);
