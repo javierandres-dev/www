@@ -13,6 +13,7 @@ export default function Header() {
   $avatar.setAttribute('alt', 'Avatar Javier Andrés GP');
   $figcaption.textContent = 'Javier Andrés GP';
   $home.setAttribute('href', 'https://www.javierandresgp.com');
+  $home.classList.add('brand');
   $toggle.classList.add('btn-theme');
   $toggle.innerHTML = `
 <input type="checkbox" class="btn-theme__cb" id="btnTheme">
@@ -21,10 +22,10 @@ export default function Header() {
   <div class="btn-theme__switch"></div>
 </label>
   `;
-  $figure.appendChild($avatar);
-  $figure.appendChild($figcaption);
-  $home.appendChild($figure);
-  $header.appendChild($home);
+  $home.appendChild($avatar);
+  $home.appendChild($figcaption);
+  $figure.appendChild($home);
+  $header.appendChild($figure);
   $header.appendChild($toggle);
   return $header;
 }

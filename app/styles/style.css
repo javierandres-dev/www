@@ -120,14 +120,15 @@ a:active {
 .header figure {
   margin: 0;
   width: 22rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .header figure img {
   width: 8rem;
 }
-
+.header .brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* 5. THEME BUTTON
   ============================= */
 .btn-theme {
