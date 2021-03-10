@@ -47,7 +47,7 @@ export default function Portfolio() {
     'href',
     'https://javierandresgp.github.io/training_pokemons/'
   );
-  $a2.textContent = 'Pokémon Cards ';
+  $a2.textContent = 'Pokémons ';
   $s2.appendChild($a2);
   $p2.appendChild($s2);
   $a3.setAttribute('target', '_blank');
