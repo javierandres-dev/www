@@ -27,11 +27,11 @@ export default function About() {
     $title.textContent = 'Acerca de Javier Andrés';
     $p1.textContent = 'Soy un programador de software autodidacta.';
     $p2.textContent =
-      "En 1994 Obtuve mi primer trabajo formal en la empresa 'Team Computer', ahí aprendí a ensamblar computadores y a instalar sotware.";
+      "En 1994 Obtuve mi primer trabajo formal en la empresa 'Team Computer', ahí aprendí a ensamblar computadores y a instalar software.";
     $p3.textContent =
-      'En 2002 decidí trabajar de manera independiente comercializando sotware, hardware y brindando soporte técnico a mis clientes, lo hice hasta 2019.';
+      'En 2002 decidí trabajar de manera independiente comercializando software, hardware y brindando soporte técnico a mis clientes, lo hice hasta 2019.';
     $p4.textContent =
-      'En septiembre de 2019, decidí dejar mi trabajo y enfocarme en conseguir dos de mis grandes sueños, aprender a hacer software y aprender ingles.';
+      'En septiembre de 2019, decidí dejar mi trabajo y enfocarme en conseguir dos de mis grandes sueños, aprender a hacer software y aprender inglés.';
     $p5.textContent =
       " En 2019 me uní a la escuela de ciencias de la computación y desarrollo de software 'Holberton School' e inicié el programa de fundamentos, actualmente dedico todo mi tiempo a realizar la especialización que estoy cursando en 'Desarrollo Web Full-Stack' y aprendiendo por cuenta propia todo lo necesario para obtener mi primer empleo formal como programador de software.";
     $p6.textContent =
