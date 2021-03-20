@@ -36,7 +36,7 @@ export default function Portfolio() {
   $a1.setAttribute('rel', 'noopener noreferrer');
   $a1.setAttribute(
     'href',
-    'https://javierandresgp.github.io/training_jsonplaceholder/'
+    'https://javierandresgp.github.io/training-jsonplaceholder/'
   );
   $a1.textContent = 'JSONplaceholder ';
   $s1.appendChild($a1);
@@ -45,16 +45,16 @@ export default function Portfolio() {
   $a2.setAttribute('rel', 'noopener noreferrer');
   $a2.setAttribute(
     'href',
-    'https://javierandresgp.github.io/training_pokemons/'
+    'https://javierandresgp.github.io/training-pokemon_cards/'
   );
-  $a2.textContent = 'Pokémons ';
+  $a2.textContent = 'Pokémon Cards ';
   $s2.appendChild($a2);
   $p2.appendChild($s2);
   $a3.setAttribute('target', '_blank');
   $a3.setAttribute('rel', 'noopener noreferrer');
   $a3.setAttribute(
     'href',
-    'https://javierandresgp.github.io/github_pages-weather_search/'
+    'https://javierandresgp.github.io/training-weather_search/'
   );
   $a3.textContent = 'Weather Search ';
   $s3.appendChild($a3);
@@ -63,7 +63,7 @@ export default function Portfolio() {
   $a4.setAttribute('rel', 'noopener noreferrer');
   $a4.setAttribute(
     'href',
-    'https://javierandresgp.github.io/github_pages-foreign_exchange/'
+    'https://javierandresgp.github.io/training-foreign_exchange/'
   );
   $a4.textContent = 'Foreign Exchange ';
   $s4.appendChild($a4);
@@ -72,7 +72,7 @@ export default function Portfolio() {
   $a5.setAttribute('rel', 'noopener noreferrer');
   $a5.setAttribute(
     'href',
-    'https://javierandresgp.github.io/github_pages-javascript_exercises/'
+    'https://javierandresgp.github.io/training-javascript_exercises/'
   );
   $a5.textContent = 'JavaScript Exercises ';
   $s5.appendChild($a5);
@@ -81,7 +81,7 @@ export default function Portfolio() {
   $a6.setAttribute('rel', 'noopener noreferrer');
   $a6.setAttribute(
     'href',
-    'https://javierandresgp.github.io/github_pages-calcular_prestamo/'
+    'https://javierandresgp.github.io/training-calcular_prestamo/'
   );
   $a6.textContent = 'Calcular Préstamo ';
   $s6.appendChild($a6);
@@ -132,10 +132,10 @@ export default function Portfolio() {
   $portfolio.appendChild($subtitle);
   $portfolio.appendChild($p1);
   $portfolio.appendChild($p2);
-  $portfolio.appendChild($p3);
+  //$portfolio.appendChild($p3);
   $portfolio.appendChild($p4);
-  $portfolio.appendChild($p5);
-  $portfolio.appendChild($p6);
+  //$portfolio.appendChild($p5);
+  //$portfolio.appendChild($p6);
   $portfolio.appendChild($p);
   return $portfolio;
 }
