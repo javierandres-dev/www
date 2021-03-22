@@ -8,10 +8,11 @@
   6. Menu button
   7. Navigation bar
   8. Home
-  9. Contact
-  10. Advertisements
-  11. Footer
-  12. Media queries
+  9. Portfolio
+  10. Contact
+  11. Advertisements
+  12. Footer
+  13. Media queries
 
   0. CUSTOM PROPERTIES
   ============================= */
@@ -322,13 +323,35 @@ a:active {
   font-size: var(--font-size-xxs);
   text-align: center;
 }
-/* 9. CONTACT
+/* 9. PORTFOLIO
+  ============================= */
+.portfolio {
+  text-align: center;
+}
+.portfolio figure {
+  width: 10rem;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio figure img {
+  border: thin solid var(--white);
+  border-radius: 50%;
+}
+.portfolio figure figcaption {
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-xxs);
+  text-align: center;
+}
+.portfolio figure:hover {
+  opacity: 0.7;
+}
+/* 10. CONTACT
   ============================= */
 .contact {
   width: min(100%, 24rem);
   margin: auto;
 }
-/* 10. ADVERTISEMENTS
+/* 11. ADVERTISEMENTS
   ============================= */
 .ads {
   background-color: var(--white);
@@ -346,7 +369,7 @@ a:active {
   flex-direction: column;
   align-items: center;
 }
-/* 11. FOOTER
+/* 12. FOOTER
   ============================= */
 .footer {
   font-weight: var(--font-weight-light);
@@ -360,7 +383,7 @@ a:active {
 .footer small {
   font-size: var(--font-size-xxs);
 }
-/* 12. MEDIA QUERIES
+/* 13. MEDIA QUERIES
   ============================= */
 @media screen and (min-width: 480px) {
   .container {

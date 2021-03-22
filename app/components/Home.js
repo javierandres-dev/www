@@ -12,18 +12,18 @@ export default function Home() {
     $intro = d.createElement('p');
   $home.classList.add('home');
   $img.setAttribute('src', './app/images/photo.jpg');
-  $img.setAttribute('alt', 'software engineer');
+  $img.setAttribute('alt', 'software developer');
   $figcaption.textContent = 'Javier Andrés';
   if (spanish) {
-    $title.textContent = 'ingeniero de software';
+    $title.textContent = 'desarrollador de software';
     $subtitle.textContent = 'desarrollador front-end';
     $intro.textContent =
-      'Hola, Soy Javier Andrés, Soy un ingeniero de software orientado al desarrollo web del lado del cliente, mi especialidad es JavaScript.';
+      'Hola, Soy Javier Andrés, Soy un desarrollador de software orientado al desarrollo web del lado del cliente, mi especialidad es JavaScript.';
   } else {
-    $title.textContent = 'software engineer';
+    $title.textContent = 'software developer';
     $subtitle.textContent = 'front-end developer';
     $intro.textContent =
-      "Hello, I'm Javier Andrés, I'm a software engineer oriented front-end developer, my focus is JavaScript.";
+      "Hello, I'm Javier Andrés, I'm a software developer oriented front-end developer, my focus is JavaScript.";
   }
   $home.appendChild($title);
   $figure.appendChild($img);
