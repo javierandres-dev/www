@@ -383,11 +383,39 @@ a:active {
 .footer small {
   font-size: var(--font-size-xxs);
 }
+/* . RESUME
+  ============================= */
+.resume {
+  text-align: center;
+}
+.resume--header {
+  background-color: var(--blue);
+  color: var(--white);
+}
+.resume--left {
+  background-color: var(--gray);
+  color: var(--white);
+}
+.resume--left figure {
+  width: 10rem;
+  margin: auto;
+}
+.resume--left figure img {
+  border: thin solid var(--white);
+  border-radius: 50%;
+}
+.resume--left figure figcaption {
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-xxs);
+  text-align: center;
+}
+.resume--right {
+}
 /* 13. MEDIA QUERIES
   ============================= */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 576px) {
   .container {
-    max-width: 420px;
+    max-width: 540px;
   }
   .home figure figcaption {
     font-size: var(--font-size-xs);
@@ -433,7 +461,7 @@ a:active {
     font-size: var(--font-size-s);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .container {
     max-width: 960px;
   }
@@ -478,5 +506,10 @@ a:active {
   }
   .header {
     padding: 2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
   }
 }
