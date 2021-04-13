@@ -90,7 +90,6 @@ a:active {
   ============================= */
 .container {
   max-width: 100%;
-  min-height: 64vh;
   margin: auto;
   padding: 1rem;
 }
@@ -309,6 +308,7 @@ a:active {
   ============================= */
 .home {
   text-align: center;
+  min-height: 60vh;
 }
 .home figure {
   width: 10rem;
@@ -349,6 +349,7 @@ a:active {
   ============================= */
 .contact {
   width: min(100%, 24rem);
+  min-height: 60vh;
   margin: auto;
 }
 /* 11. ADVERTISEMENTS
@@ -386,30 +387,70 @@ a:active {
 /* . RESUME
   ============================= */
 .resume {
-  text-align: center;
 }
 .resume--header {
   background-color: var(--blue);
   color: var(--white);
+  text-align: center;
 }
-.resume--left {
+.resume--header h1 {
+  text-transform: capitalize;
+}
+.resume--dark {
   background-color: var(--gray);
   color: var(--white);
+  padding-top: 2rem;
 }
-.resume--left figure {
+
+.resume--dark figure {
   width: 10rem;
   margin: auto;
 }
-.resume--left figure img {
+.resume--dark figure img {
   border: thin solid var(--white);
   border-radius: 50%;
 }
-.resume--left figure figcaption {
+.resume--dark figure figcaption {
   font-weight: var(--font-weight-light);
   font-size: var(--font-size-xxs);
   text-align: center;
 }
-.resume--right {
+.resume--dark section {
+  padding: 2rem 1rem;
+}
+.resume--light {
+}
+.resume--dark h4,
+.resume--light h4,
+.resume--dark h5,
+.resume--light h5,
+.resume--dark h6,
+.resume--light h6 {
+  text-align: left;
+  margin: 0;
+}
+.resume--dark h4,
+.resume--light h4 {
+  margin-top: 2rem;
+}
+.resume--light h5,
+.resume--dark h5 {
+  font-weight: var(--font-weight-base);
+}
+.resume--light h6,
+.resume--dark h6 {
+  font-weight: var(--font-weight-light);
+}
+.resume--dark .ref p,
+.resume--light .ref p {
+  margin: 0;
+}
+.resume--dark ion-icon {
+  font-size: var(--font-size-xxl);
+}
+.resume--dark .material-icons,
+.resume--light .material-icons {
+  font-size: var(--font-size-xxl);
 }
 /* 13. MEDIA QUERIES
   ============================= */
@@ -443,6 +484,10 @@ a:active {
   }
   .header {
     padding: 1.5rem;
+  }
+  .home,
+  .contact {
+    min-height: 70vh;
   }
   .home figure figcaption {
     font-size: var(--font-size-s);
@@ -499,6 +544,10 @@ a:active {
     background-color: inherit;
     border-radius: 0;
   }
+  .home,
+  .contact {
+    min-height: 76vh;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -511,5 +560,28 @@ a:active {
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+  .resume {
+  }
+  .resume--header,
+  .resume--dark,
+  .resume--light {
+  }
+  .resume--header {
+    margin-top: 8rem;
+  }
+  .resume--header h1,
+  .resume--header h2 {
+    text-align: left;
+    margin: 0 0 0 40rem;
+  }
+  .resume--dark {
+    float: left;
+    width: 30rem;
+    margin: -16rem 2rem 1rem 8rem;
+  }
+  .resume--light {
+    float: right;
+    width: 90rem;
   }
 }
