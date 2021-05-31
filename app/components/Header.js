@@ -1,5 +1,4 @@
 'use strict';
-// set up the "header" tag
 export default function Header() {
   const d = document,
     $header = d.createElement('header'),

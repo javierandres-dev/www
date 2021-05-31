@@ -1,5 +1,4 @@
 'use strict';
-// set up the view of the "cu" page
 export default function Resume() {
   const spanish = navigator.language.startsWith('es'),
     $resume = document.createElement('section');

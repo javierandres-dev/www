@@ -7,7 +7,7 @@ import Personal from './Personal.js';
 import Resume from './Resume.js';
 import Error404 from './Error404.js';
 import Aside from './Aside.js';
-// set different views according to user selection
+
 export default function Router() {
   const { hash } = location,
     $main = document.querySelector('main');

@@ -5,7 +5,7 @@ import Nav from './components/Nav.js';
 import Main from './components/Main.js';
 import Footer from './components/Footer.js';
 import Router from './components/Router.js';
-// main component, here the call of the other components is centralized
+
 export function App() {
   const $body = document.querySelector('body'),
     $heading = document.createElement('h1');

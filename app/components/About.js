@@ -1,5 +1,4 @@
 'use strict';
-// set up the view of the "about" page
 export default function About() {
   const spanish = navigator.language.startsWith('es'),
     d = document,

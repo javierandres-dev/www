@@ -1,5 +1,4 @@
 'use strict';
-// set up the view of the "portfolio" page
 export default function Portfolio() {
   const spanish = navigator.language.startsWith('es'),
     d = document,
