@@ -9,10 +9,9 @@
   7. Navigation bar
   8. Home
   9. Portfolio
-  10. Contact
-  11. Advertisements
-  12. Footer
-  13. Media queries
+  10. About
+  11. Footer
+  12. Media queries
 
   0. CUSTOM PROPERTIES
   ============================= */
@@ -22,9 +21,9 @@
   --darkblue: #3572a5;
   --gray: #30363d;
   --lightgray: #c9d1d9;
-  --black: #0d1117;
+  --black: #000000;
   --white: #ffffff;
-  --font-family-base: 'Raleway', sans-serif;
+  --font-family-base: "Raleway", sans-serif;
   --font-weight-light: 200;
   --font-weight-base: 400;
   --font-weight-bold: 600;
@@ -95,11 +94,11 @@ a:active {
 }
 .light-mode {
   background-color: var(--white);
-  color: var(--gray);
+  color: var(--black);
 }
 .dark-mode {
   background-color: var(--black);
-  color: var(--lightgray);
+  color: var(--white);
 }
 /* 3. HELPERS
   ============================= */
@@ -119,10 +118,10 @@ a:active {
 }
 .header figure {
   margin: 0;
-  width: 22rem;
+  width: 20rem;
 }
 .header figure img {
-  width: 8rem;
+  width: 4rem;
 }
 .header .brand {
   display: flex;
@@ -164,7 +163,7 @@ a:active {
   transition: 0.8s;
 }
 .btn-theme__inner::before {
-  content: '☀️';
+  content: "☀️";
 }
 .btn-theme__switch {
   width: 2.4rem;
@@ -186,7 +185,7 @@ a:active {
   .btn-theme__cb:not(:checked)
   + .btn-theme__label
   .btn-theme__inner::before {
-  content: '🌙';
+  content: "🌙";
 }
 .btn-theme .btn-theme__cb:not(:checked) + .btn-theme__label .btn-theme__switch {
   transform: translateX(-3.6rem);
@@ -307,8 +306,8 @@ a:active {
 /* 8. HOME
   ============================= */
 .home {
+  margin: 4rem auto;
   text-align: center;
-  min-height: 60vh;
 }
 .home figure {
   width: 10rem;
@@ -326,6 +325,7 @@ a:active {
 /* 9. PORTFOLIO
   ============================= */
 .portfolio {
+  margin: 4rem auto;
   text-align: center;
 }
 .portfolio figure {
@@ -345,32 +345,12 @@ a:active {
 .portfolio figure:hover {
   opacity: 0.7;
 }
-/* 10. CONTACT
+/* 10. ABOUT
   ============================= */
-.contact {
-  width: min(100%, 24rem);
-  min-height: 60vh;
-  margin: auto;
+.about {
+  margin: 4rem auto;
 }
-/* 11. ADVERTISEMENTS
-  ============================= */
-.ads {
-  background-color: var(--white);
-  text-align: center;
-  padding-top: 1rem;
-}
-.ads small {
-  font-size: var(--font-size-s);
-  font-weight: var(--font-weight-light);
-  color: var(--lightgray);
-  text-transform: uppercase;
-}
-.ads div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* 12. FOOTER
+/* 11. FOOTER
   ============================= */
 .footer {
   font-weight: var(--font-weight-light);
@@ -379,80 +359,12 @@ a:active {
 }
 .footer p {
   font-size: var(--font-size-xs);
-  margin-bottom: auto;
+  margin: 0;
 }
 .footer small {
   font-size: var(--font-size-xxs);
 }
-/* . RESUME
-  ============================= */
-.resume {
-}
-.resume--header {
-  background-color: var(--blue);
-  color: var(--white);
-  text-align: center;
-}
-.resume--header h1 {
-  text-transform: capitalize;
-}
-.resume--dark {
-  background-color: var(--gray);
-  color: var(--white);
-  padding-top: 2rem;
-}
-
-.resume--dark figure {
-  width: 10rem;
-  margin: auto;
-}
-.resume--dark figure img {
-  border: thin solid var(--white);
-  border-radius: 50%;
-}
-.resume--dark figure figcaption {
-  font-weight: var(--font-weight-light);
-  font-size: var(--font-size-xxs);
-  text-align: center;
-}
-.resume--dark section {
-  padding: 2rem 1rem;
-}
-.resume--light {
-}
-.resume--dark h4,
-.resume--light h4,
-.resume--dark h5,
-.resume--light h5,
-.resume--dark h6,
-.resume--light h6 {
-  text-align: left;
-  margin: 0;
-}
-.resume--dark h4,
-.resume--light h4 {
-  margin-top: 2rem;
-}
-.resume--light h5,
-.resume--dark h5 {
-  font-weight: var(--font-weight-base);
-}
-.resume--light h6,
-.resume--dark h6 {
-  font-weight: var(--font-weight-light);
-}
-.resume--dark .ref p,
-.resume--light .ref p {
-  margin: 0;
-}
-.resume--dark ion-icon {
-  font-size: var(--font-size-xxl);
-}
-.resume--dark .material-icons,
-.resume--light .material-icons {
-  font-size: var(--font-size-xxl);
-}
-/* 13. MEDIA QUERIES
+/* 12. MEDIA QUERIES
   ============================= */
 @media screen and (min-width: 576px) {
   .container {
@@ -472,6 +384,12 @@ a:active {
   }
 }
 @media screen and (min-width: 768px) {
+  .header figure {
+    width: 22rem;
+  }
+  .header figure img {
+    width: 6rem;
+  }
   h2,
   h3,
   h4,
@@ -485,16 +403,8 @@ a:active {
   .header {
     padding: 1.5rem;
   }
-  .home,
-  .contact {
-    min-height: 70vh;
-  }
   .home figure figcaption {
     font-size: var(--font-size-s);
-  }
-  .ads div {
-    flex-direction: row;
-    justify-content: space-evenly;
   }
   .footer {
     padding: 2rem;
@@ -544,10 +454,6 @@ a:active {
     background-color: inherit;
     border-radius: 0;
   }
-  .home,
-  .contact {
-    min-height: 76vh;
-  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -558,30 +464,13 @@ a:active {
   }
 }
 @media screen and (min-width: 1400px) {
+  .header figure {
+    width: 24rem;
+  }
+  .header figure img {
+    width: 8rem;
+  }
   .container {
     max-width: 1320px;
-  }
-  .resume {
-  }
-  .resume--header,
-  .resume--dark,
-  .resume--light {
-  }
-  .resume--header {
-    margin-top: 8rem;
-  }
-  .resume--header h1,
-  .resume--header h2 {
-    text-align: left;
-    margin: 0 0 0 40rem;
-  }
-  .resume--dark {
-    float: left;
-    width: 30rem;
-    margin: -16rem 2rem 1rem 8rem;
-  }
-  .resume--light {
-    float: right;
-    width: 90rem;
   }
 }
