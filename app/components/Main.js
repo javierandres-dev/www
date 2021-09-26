@@ -103,7 +103,7 @@ export default function Main() {
     $a1About.setAttribute("href", "#");
     $a1About.setAttribute(
       "onclick",
-      "window.open('https://drive.google.com/file/d/10KLT8QU5oh_MAgyPZdtNVbLmxui0QGAG/view?usp=sharing', '_blank', 'fullscreen=yes'); return false;"
+      "window.open('https://drive.google.com/file/d/1sPp1JuZk04rRj94KG0VYjeZevZ42fdZD/view?usp=sharing', '_blank', 'fullscreen=yes'); return false;"
     );
     $p8About.appendChild($a1About);
   }
