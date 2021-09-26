@@ -48,10 +48,6 @@ export default function Main() {
   $about.setAttribute("id", "about");
   $a1About.setAttribute("target", "_blank");
   $a1About.setAttribute("rel", "noopener noreferrer");
-  $a1About.setAttribute(
-    "href",
-    "https://drive.google.com/file/d/1y9kxQgPUKHTrjrKkbQ9Y8iWytnzqqkji/view?usp=sharing"
-  );
   if (spanish) {
     //
     $titleHome.textContent = "desarrollador de software";
@@ -74,7 +70,12 @@ export default function Main() {
       "En Abril de 2021 obtuve mi primer empleo como desarrollador de software.";
     $p7About.textContent =
       "Durante este tiempo he integrado equipos de desarrollo de software y colaborado en proyectos usando diferentes lenguajes como 'C', 'Python', 'SQL', 'Java', y 'JavaScript'; haciendo uso de tecnologías como 'Git', 'Docker', 'ReactJS', 'NodeJS', 'TypeScript',  entre otras";
-    $a1About.textContent = "Curriculum";
+    $a1About.textContent = "Currículum";
+    $a1About.setAttribute("href", "#");
+    $a1About.setAttribute(
+      "onclick",
+      "window.open('https://drive.google.com/file/d/1dvd9SxrS71EfgF7-ThZLc-3ftFMTa5Rd/view?usp=sharing', '_blank', 'fullscreen=yes'); return false;"
+    );
     $p8About.appendChild($a1About);
   } else {
     //
@@ -99,6 +100,11 @@ export default function Main() {
     $p7About.textContent =
       "During this time I have been part of some software development teams and I have collaborated on projects using different languages like 'C', 'Python', 'SQL', 'Java' and 'JavaScript'; Using technologies like 'Git', 'Docker', 'ReactJS', 'NodeJS', 'TypeScript',  among others.";
     $a1About.textContent = "Curriculum";
+    $a1About.setAttribute("href", "#");
+    $a1About.setAttribute(
+      "onclick",
+      "window.open('https://drive.google.com/file/d/10KLT8QU5oh_MAgyPZdtNVbLmxui0QGAG/view?usp=sharing', '_blank', 'fullscreen=yes'); return false;"
+    );
     $p8About.appendChild($a1About);
   }
   //
