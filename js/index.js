@@ -1,5 +1,5 @@
 'use strict';
-import allTexts from '../json/index.json' assert { type: 'json' };
+import { allTexts } from './translations.js';
 
 const lang = window.navigator.language,
   d = window.document;
