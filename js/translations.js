@@ -9,7 +9,7 @@ export const allTexts = {
       "I'm a software programmer.",
       "In September 2019, I joined to a school of computer science and software development I started the 'Software Foundations' program, which I finished on June 2020, then I started the specialization in 'Full-Stack Web Development' that I completed on May 2021.",
       'In April of 2021 I started to work as software developer.',
-      "I have been part of some software development teams and I have collaborated on projects using different languages like 'C', 'Python', 'SQL', 'Java' and 'JavaScript'; Using technologies like 'Git', 'Docker', 'Svelte', 'ReactJS', 'NodeJS', 'TypeScript', among others.",
+      "I have been part of some software development teams and I have collaborated on projects using different languages like 'C', 'Python', 'SQL', 'Java' and 'JavaScript'; using technologies like 'Git', 'Docker', 'Svelte', 'ReactJS', 'NodeJS', 'TypeScript', among others.",
       "I'm currently working for an excellent company.",
       'Found a bug or have an idea? Contact me.',
     ],
