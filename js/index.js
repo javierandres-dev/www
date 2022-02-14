@@ -18,13 +18,6 @@ const $body = d.querySelector('body'),
   $me = d.getElementById('me'),
   $copyright = d.getElementById('copyright');
 
-async function setInitialContents() {
-  const res = await fetch('../json/index.json');
-  allTexts = await res.json();
-  lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
-  setContents();
-}
-
 function setContents() {
   let html = '';
   const last = texts.me.length - 1;
@@ -44,10 +37,13 @@ function setContents() {
   $copyright.textContent = texts.copyright;
 }
 
-const eventListeners = () => {
-  $btnLang.addEventListener('click', toggleLang);
-  $btnTheme.addEventListener('click', toggleTheme);
-};
+async function setInitialContents() {
+  const res = await fetch('../json/index.json');
+  allTexts = await res.json();
+  lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
+  setContents();
+}
+setInitialContents();
 
 const toggleLang = () => {
   texts.lang === 'es' ? (texts = allTexts.en) : (texts = allTexts.es);
@@ -64,7 +60,11 @@ const toggleTheme = () => {
   $logo.setAttribute('src', `./img/logo-${oppositeTheme}.svg`);
 };
 
+const eventListeners = () => {
+  $btnLang.addEventListener('click', toggleLang);
+  $btnTheme.addEventListener('click', toggleTheme);
+};
+
 d.addEventListener('DOMContentLoaded', () => {
-  setInitialContents();
   eventListeners();
 });
