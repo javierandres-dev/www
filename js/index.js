@@ -18,11 +18,14 @@ const $body = d.querySelector('body'),
   $me = d.getElementById('me'),
   $copyright = d.getElementById('copyright');
 
-d.addEventListener('DOMContentLoaded', () => {
-  eventListeners();
-});
+async function setInitialContents() {
+  const res = await fetch('../json/index.json');
+  allTexts = await res.json();
+  lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
+  setContents();
+}
 
-const setContents = () => {
+function setContents() {
   let html = '';
   const last = texts.me.length - 1;
   texts.me.forEach((item, i) => {
@@ -39,14 +42,14 @@ const setContents = () => {
   $aboutMe.textContent = texts.aboutMe;
   $me.innerHTML = html;
   $copyright.textContent = texts.copyright;
-};
+}
 
 const eventListeners = () => {
   $btnLang.addEventListener('click', toggleLang);
   $btnTheme.addEventListener('click', toggleTheme);
 };
 
-const toggleLang = async () => {
+const toggleLang = () => {
   texts.lang === 'es' ? (texts = allTexts.en) : (texts = allTexts.es);
   setContents();
 };
@@ -61,9 +64,7 @@ const toggleTheme = () => {
   $logo.setAttribute('src', `./img/logo-${oppositeTheme}.svg`);
 };
 
-(async () => {
-  const res = await fetch('../json/index.json');
-  allTexts = await res.json();
-  lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
-  setContents();
-})();
+d.addEventListener('DOMContentLoaded', () => {
+  setInitialContents();
+  eventListeners();
+});
