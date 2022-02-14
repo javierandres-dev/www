@@ -38,9 +38,7 @@ const toggleTheme = () => {
 };
 
 const toggleLang = () => {
-  texts.lang === 'es'
-    ? (texts = JSON.parse(allTexts.en))
-    : (texts = JSON.parse(allTexts.es));
+  texts.lang === 'es' ? (texts = allTexts.en) : (texts = allTexts.es);
   setContents();
 };
 
