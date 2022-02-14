@@ -163,6 +163,9 @@ a:active {
   color: var(--c-primary);
   cursor: pointer;
 }
+.summary:focus {
+  border: none;
+}
 .article {
   border: 0.1rem solid var(--c-highlight);
   border-radius: 1rem;
