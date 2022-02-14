@@ -23,6 +23,7 @@
   --c-primary: #0078d7;
   --c-highlight: #00a1f1;
   --ff-base: 'Noto Sans Display', sans-serif;
+  --fw-tiny: 100;
   --fw-light: 300;
   --fw-base: 400;
   --fw-bold: 500;
@@ -75,8 +76,8 @@ a:active {
 .title {
   margin: 0;
   font-size: 1px;
-  font-weight: var(--fw-light);
-  color: var(--c-light);
+  font-weight: var(--fw-tiny);
+  color: transparent;
 }
 .subtitle {
   font-size: var(--fs-l);
