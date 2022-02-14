@@ -19,18 +19,8 @@ const $body = d.querySelector('body'),
   $copyright = d.getElementById('copyright');
 
 d.addEventListener('DOMContentLoaded', () => {
-  setInitialContents();
   eventListeners();
 });
-
-const setInitialContents = async () => {
-  const res = await fetch('../json/index.json');
-  allTexts = await res.json();
-
-  lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
-
-  setContents();
-};
 
 const setContents = () => {
   let html = '';
@@ -70,3 +60,10 @@ const toggleTheme = () => {
   $footer.classList.toggle('dark');
   $logo.setAttribute('src', `./img/logo-${oppositeTheme}.svg`);
 };
+
+(async () => {
+  const res = await fetch('../json/index.json');
+  allTexts = await res.json();
+  lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
+  setContents();
+})();
