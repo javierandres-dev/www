@@ -8,7 +8,6 @@ How does it look? Take a look at:
 * HTML
 * CSS
 * JavaScript
-* JSON
 - - -
 ## Software Developer
 [Javier Andrés Garzón Patarroyo](https://javierandres.dev)
