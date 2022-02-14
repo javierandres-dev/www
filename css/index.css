@@ -164,7 +164,7 @@ a:active {
   cursor: pointer;
 }
 .summary:focus {
-  border: none;
+  outline: none;
 }
 .article {
   border: 0.1rem solid var(--c-highlight);
