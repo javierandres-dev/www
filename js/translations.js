@@ -3,7 +3,7 @@ export const allTexts = {
   en: {
     profession: 'Software developer',
     greet: "Hello, I'm",
-    i: "I'm a software developer oriented to web development, focus on JavaScript.",
+    i: "I'm a software developer oriented to web development.",
     aboutMe: 'About me',
     me: [
       "I'm a software programmer.",
@@ -20,7 +20,7 @@ export const allTexts = {
   es: {
     profession: 'Desarrollador de software',
     greet: 'Hola, Soy',
-    i: 'soy desarrollador de software orientado al desarrollo web, mi especialidad es JavaScript.',
+    i: 'soy desarrollador de software orientado al desarrollo web.',
     aboutMe: 'Acerca de mí',
     me: [
       'Soy programador de software.',
