@@ -12,7 +12,6 @@ lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
 
 const $body = d.querySelector('body'),
   $footer = d.querySelector('footer'),
-  $logo = d.getElementById('logo'),
   $btnLang = d.getElementById('btnLang'),
   $btnTheme = d.getElementById('btnTheme'),
   $profession = d.getElementById('profession'),
@@ -34,7 +33,6 @@ const toggleTheme = () => {
   $btnTheme.textContent = theme === 'light' ? '🌙' : '☀️';
   $body.classList.toggle('dark');
   $footer.classList.toggle('dark');
-  $logo.setAttribute('src', `./img/logo-${oppositeTheme}.svg`);
 };
 
 const toggleLang = () => {
@@ -55,7 +53,6 @@ function setContents() {
     else html += `<p>${item}</p>`;
   });
 
-  $logo.setAttribute('src', `./img/logo-${oppositeTheme}.svg`);
   $btnLang.innerHTML = `<img src="./img/flag-${texts.oppositeLang}.png" alt="flag" class='btn-flag'>`;
   $btnTheme.textContent = theme === 'light' ? '🌙' : '☀️';
   $profession.textContent = texts.profession;

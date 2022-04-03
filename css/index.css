@@ -99,6 +99,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 .brand {
   margin: 0;
@@ -106,7 +107,8 @@ a:active {
   align-items: center;
 }
 .brand-logo {
-  width: 6rem;
+  width: 4rem;
+  margin-right: 1rem;
 }
 .brand-name span {
   font-size: var(--fs-s);
@@ -241,6 +243,12 @@ a:active {
   .container {
     max-width: 720px;
   }
+  .brand-logo {
+    width: 5rem;
+  }
+  .brand-name {
+    font-size: var(--fs-l);
+  }
   .main,
   .details {
     width: 540px;
@@ -257,6 +265,15 @@ a:active {
 @media screen and (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  .brand-logo {
+    width: 6rem;
+  }
+  .brand-name {
+    font-size: var(--fs-xl);
+  }
+  .brand-name span {
+    font-size: var(--fs-base);
   }
 }
 @media screen and (min-width: 1200px) {
