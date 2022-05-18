@@ -1,16 +1,9 @@
 'use strict';
-import { allTexts } from './translations.js';
-
-const lang = window.navigator.language,
-  d = window.document;
-
-let texts = null,
-  theme = 'light',
-  oppositeTheme = 'dark';
-
-lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
-
-const $body = d.querySelector('body'),
+const d = window.document,
+  lang = window.navigator.language,
+  res = await fetch('../json/index.json'),
+  allTexts = await res.json(),
+  $body = d.querySelector('body'),
   $footer = d.querySelector('footer'),
   $btnLang = d.getElementById('btnLang'),
   $btnTheme = d.getElementById('btnTheme'),
@@ -21,10 +14,11 @@ const $body = d.querySelector('body'),
   $me = d.getElementById('me'),
   $copyright = d.getElementById('copyright');
 
-d.addEventListener('DOMContentLoaded', () => {
-  setContents();
-  eventListeners();
-});
+let texts = null,
+  theme = 'light',
+  oppositeTheme = 'dark';
+
+lang.startsWith('es') ? (texts = allTexts.es) : (texts = allTexts.en);
 
 const toggleTheme = () => {
   theme === 'light'
@@ -38,11 +32,6 @@ const toggleTheme = () => {
 const toggleLang = () => {
   texts.lang === 'es' ? (texts = allTexts.en) : (texts = allTexts.es);
   setContents();
-};
-
-const eventListeners = () => {
-  $btnLang.addEventListener('click', toggleLang);
-  $btnTheme.addEventListener('click', toggleTheme);
 };
 
 function setContents() {
@@ -62,3 +51,9 @@ function setContents() {
   $me.innerHTML = html;
   $copyright.textContent = texts.copyright;
 }
+setContents();
+
+(() => {
+  $btnLang.addEventListener('click', toggleLang);
+  $btnTheme.addEventListener('click', toggleTheme);
+})();

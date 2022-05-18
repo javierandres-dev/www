@@ -36,6 +36,7 @@
 /* 2. BASE
   ============================= */
 html {
+  height: 100%;
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -46,6 +47,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  height: 100%;
   font-family: var(--ff-base);
   font-size: var(--fs-base);
   font-weight: var(--fw-base);
@@ -59,6 +61,10 @@ a:visited {
 }
 a:active {
   color: var(--c-highlight);
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 /* 3. GLOBALS
   ============================= */
