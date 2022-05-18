@@ -1,12 +1,8 @@
 # :octocat: www
 - - -
-:copyright: My web page, build with vanilla :icecream: :yum:  
+:copyright: My web page  
 How does it look? Take a look at:
 * [https://javierandresgp.com](https://javierandresgp.com)
-## Stack
-* HTML
-* CSS
-* JavaScript
 - - -
 ## Software Developer
 [Javier Andrés Garzón Patarroyo](https://javierandresgp.com)
