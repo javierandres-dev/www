@@ -1,7 +1,7 @@
 # :octocat: www
-- - -
-:copyright: My web page  
-How does it look? Take a look at [https://javierandresgp.com](https://javierandresgp.com)
-- - -
+---
+> My web page `Deprecated`.
+---
 ## Software Developer
-[Javier Andrés Garzón Patarroyo](https://javierandresgp.com)
+Built by [Javi](https://javierandres.dev) :copyright: 2022  
+Found a bug or have an idea? [Contact me](https://javierandres.dev).
